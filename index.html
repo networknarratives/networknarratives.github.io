@@ -9,189 +9,111 @@
     <title>
         NetworkNarratives
     </title>
-<link href="css/app.css?e1a1f2292747fb1f6fcc" rel="stylesheet"></head>
+<link href="css/vendors~app.css?fa7ae9d02e4654b75c9b" rel="stylesheet"><link href="css/app.css?fa7ae9d02e4654b75c9b" rel="stylesheet"></head>
 
 <body>
     <nav id="navigation" class="navbar navbar-dark bg-primary">
         <span class="navbar-brand mb-0 h1">NetworkNarratives</span>
-        <div class="d-flex">
-            <button type="button" class="btn btn-info my-1" id="data-setting" data-toggle="modal" data-target="#exampleModal">Data Setting</button>
-        </div>
+        <div class="d-flex"></div>
     </nav>
     <div id="container" class="container">
         <div class="row">
             <div class="col-3 pr-0" id="left-container">
                 <div id="storyline" class="card mt-2 mx-auto">
-                    <div id="storyline-title" class="card-header badge badge-light">STORY TEMPLATES</div>
+                    <div id="storyline-title" class="card-header badge badge-light">SETTINGS</div>
                     <div id="storyline-body">
                         <ul class="list-group list-group-flush">
                             <li id="storyline-select" class="list-group-item">
-                                <div id="current-selection">
-                                    <span class="badge badge-light mb-1" id="selection-title">Current selection type: </span>
-                                    <span class="badge mb-1" id="selection-type-label">[ ]</span>
+                                <button type="button" class="btn btn-sm btn-outline-success mb-1" id="data-setting" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-cog"></i> Data setting</button>
+                                <div id="dataset-selection">
+                                    <span id="select-dataset-title">Selected dataset:</span>
+                                    <span>[</span>
+                                    <span id="select-dataset-label"></span>
+                                    <span>]</span>
                                 </div>
                                 <hr class="my-2">
                                 <div>
                                     <div>
-                                        <h6 id="template-select-title">Select a template: </h6>
-                                        <button id="reset" type="button" class="btn btn-sm btn-outline-secondary">Reset</button>
+                                        <div id="walkthrough-select-title">Select a walkthrough: </div>
+                                        
                                     </div>
-                                    <ul id="template-list" class="nav nav-pills flex-column mt-3">
+                                    <ul id="template-list" class="nav nav-pills flex-column mt-1">
                                         <li class="nav-item">
                                             <a id="template-option-none" class="nav-link template-option active" template-value="none" href="#">None</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option one-region disabled" template-value="one-region-volume" href="#">Describing the flow weights of [one-region]</a>
+                                            <a class="nav-link template-option one-region disabled" template-value="one-region-volume" href="#" data-toggle="tooltip" data-placement="right" title="This is the abstact for the walkthrough: Describing the flow weights of one-region.">Describing the flow weights of [one-region]</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option two-regions disabled" template-value="two-regions-comparison" href="#">Comparing [two-regions]</a>
+                                            <a class="nav-link template-option two-regions disabled" template-value="two-regions-comparison" href="#" data-toggle="tooltip" data-placement="right" title="This is the abstact for the walkthrough: Comparing two regions.">Comparing [two-regions]</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option multiple-regions disabled" template-value="multiple-regions-summary" href="#">Summary of [multiple-regions]</a>
+                                            <a class="nav-link template-option multiple-regions disabled" template-value="multiple-regions-summary" href="#" data-toggle="tooltip" data-placement="right" title="This is the abstact for the walkthrough: Summary of multiple regions.">Summary of [multiple-regions]</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option multiple-regions disabled" template-value="test" href="#">Test</a>
+                                            <a class="nav-link template-option multiple-regions" template-value="test" href="#" data-toggle="tooltip" data-placement="auto" title="This is the abstact for the walkthrough: Abstract description.">Test</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
-                            <li id="template-control" class="list-group-item">
-                                <div id="choices" class="d-flex align-items-center justify-content-around">
-                                    <button id="btn-block-back" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-fast-backward"></i> Block</button>
-                                    <button id="btn-fact-back" type="button" class="btn btn-primary btn-sm"><i class="fas fa-step-backward"></i> Fact</button>
-                                    <button id="btn-fact-next" type="button" class="btn btn-primary btn-sm">Fact <i class="fas fa-step-forward"></i></button>
-                                    <button id="btn-block-next" type="button" class="btn btn-secondary btn-sm">Block <i class="fas fa-fast-forward"></i></button>
-                                </div>
-                                <div id="choices-extension" class="d-flex align-items-center justify-content-center mt-1">
-                                    <button id="btn-more" type="button" class="btn btn-secondary btn-sm mr-2">Tell me more <i class="fas fa-chevron-circle-down"></i></button>
-                                    <button id="btn-extension" type="button" class="btn btn-secondary btn-sm">Extented Facts <i class="fas fa-plus-circle"></i></button>
-                                </div>
-                            </li>
-                            <li id="storyline-svg" class="list-group-item">
+                            <li id="outlines" class="list-group-item">
                                 
+                                <div id="walkthrough-explanation" class="mb-1">Follow the walkthrough, using the navigation panel on the right or the overview below:</div>
+                                <ul id="walkthrough-tabs" class="nav nav-tabs mb-1">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#walkthrough-outline"><i class="fas fa-list-ul"></i> Outline</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#walkthrough-starred"><i class="fas fa-star"></i> Starred</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div id="walkthrough-outline" class="tab-pane fade active show">
+                                        <div id="storyline-svg"></div>
+                                    </div>
+                                    <div id="walkthrough-starred" class="tab-pane fade">
+                                        <div id="starred-svg"></div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-7">
+            <div class="col-9">
                 <div id="preview" class="card mt-2 mx-auto">
+                    <div id="preview-title" class="card-header badge badge-light">
+                        <span id="map-section-name" class="slide-title">(Section title)</span>
+                        <span class="slide-title">: </span>
+                        <span id="map-slide-name" class="slide-title ml-2">(Slide title)</span>
+                    </div>
                     <div id="preview-body" class="d-flex justify-content-center">
                         <div id="map"></div>
-                        <div id="fact-nav" class="px-2">
-                            <button id="btn-map-fact-back" type="button" class="btn btn-primary float-start"><i class="fas fa-chevron-left"></i></button>
-                            <button id="btn-map-fact-next" type="button" class="btn btn-primary float-right"><i class="fas fa-chevron-right"></i></button>
+                        <div id="network"></div>
+                        <div id="slide-interaction">
+                            <button id="btn-star" type="button" class="unstarred btn btn-sm btn-outline-primary float-start mx-2"><i class="far fa-star"></i></button>
+                            <button id="btn-slide-back" type="button" class="btn btn-primary float-start mx-2"><i class="fas fa-chevron-left"></i></button>
+                            <button id="btn-slide-next" type="button" class="btn btn-primary float-right mx-2"><i class="fas fa-chevron-right"></i></button>
                         </div>
-                        <div id="preview-fact">
-                            <span id="preview-fact-text">Please select a dataset (Data Setting)</span>
+                    </div>
+                    <div id="slide-control-bar">
+                        <div id="slide-text-bar" class="text-center">
+                            <span id="slide-text">Please select a dataset (<a id="data-setting-link" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-cog"></i> Data setting</a>)</span>
+                        </div>
+                        <div id="slide-control-buttons" class="d-flex justify-content-around align-items-center">
+                            <button id="btn-block-back" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-fast-backward"></i> Previous section</button>
+                            <button id="btn-fact-back" type="button" class="btn btn-success btn-sm"><i class="fas fa-step-backward"></i> Previous slide</button>
+                            <div class="d-flex justify-content-center">
+                                <button disabled="disabled" id="btn-more" type="button" class="btn btn-primary btn-sm mr-2">More about this section <i class="fas fa-chevron-circle-down"></i></button>
+                                <button disabled="disabled" id="btn-extension" type="button" class="btn btn-primary btn-sm">More about this slide <i class="fas fa-plus-circle"></i></button>
+                            </div>
+                            <button id="btn-fact-next" type="button" class="btn btn-success btn-sm">Next slide <i class="fas fa-step-forward"></i></button>
+                            <button id="btn-block-next" type="button" class="btn btn-secondary btn-sm">Next section <i class="fas fa-fast-forward"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-2 pl-0" id="right-container">
-                <div id="template-config" class="card mt-2 mx-auto">
-                    <div id="template-config-title" class="card-header badge badge-light">TEMPLATE CONFIGURATION</div>
-                    <div id="template-config-body" class="card-body pt-2">
-                        <div class="btn-group mb-2" role="group" aria-label="Button group with nested dropdown">
-                            <button type="button" class="btn btn-sm btn-primary">Select a topic</button>
-                            <div class="btn-group" role="group">
-                              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                <a class="dropdown-item topic-link" id="topic-link-geography" href="#" value="geography">Geography</a>
-                                <a class="dropdown-item topic-link" id="topic-link-weight" href="#" value="weight">Flow weight</a>
-                                <a class="dropdown-item topic-link" id="topic-link-extreme" href="#" value="extreme">Extreme</a>
-                                <a class="dropdown-item topic-link" id="topic-link-overview" href="#" value="overview">Overview</a>
-                                <a class="dropdown-item topic-link" id="topic-link-statistics" href="#" value="statistics">Statistics</a>
-                                <a class="dropdown-item topic-link" id="topic-link-node-neighbours" href="#" value="node-neighbours">Node neighbours</a>
-                                <a class="dropdown-item topic-link" id="topic-link-adjacent-regions" href="#" value="adjacent-regions">Adjacent regions</a>
-                                <a class="dropdown-item topic-link" id="topic-link-common-nodes" href="#" value="common-nodes">Common nodes</a>
-                                <a class="dropdown-item topic-link" id="topic-link-common-links" href="#" value="common-links">Common links</a>
-                                <a class="dropdown-item topic-link" id="topic-link-nodes" href="#" value="nodes">Nodes</a>
-                                <a class="dropdown-item topic-link" id="topic-link-links" href="#" value="links">Links</a>
-                                <a class="dropdown-item topic-link" id="topic-link-density" href="#" value="density">Density</a>
-                                <a class="dropdown-item topic-link" id="topic-link-connectivity" href="#" value="connectivity">Connectivity</a>
-                                <a class="dropdown-item topic-link" id="topic-link-outliers" href="#" value="outliers">Outliers</a>
-                              </div>
-                            </div>
-                        </div>
-                        
-                        <h7 id="template-block-title" class="card-subtitle text-muted">Building block types</h7>
-                        <div id="block-checkbox-group">
-                            
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-geography">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-geography" value="geography">
-                                <label class="custom-control-label" for="checkbox-topic-geography">geography</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-weight">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-weight" value="weight">
-                                <label class="custom-control-label" for="checkbox-topic-weight">flow weight</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-extreme">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-extreme" value="extreme">
-                                <label class="custom-control-label" for="checkbox-topic-extreme">extreme</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-overview">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-overview" value="overview">
-                                <label class="custom-control-label" for="checkbox-topic-overview">overview</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-statistics">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-statistics" value="topic-statistics">
-                                <label class="custom-control-label" for="checkbox-topic-connectivity">statistics</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-node-neighbours">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-node-neighbours" value="node-neighbours">
-                                <label class="custom-control-label" for="checkbox-topic-node-neighbours">node neighbours</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-adjacent-regions">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-adjacent-regions" value="adjacent-regions">
-                                <label class="custom-control-label" for="checkbox-topic-adjacent-regions">adjacent regions</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-common-nodes">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-common-nodes" value="common-nodes">
-                                <label class="custom-control-label" for="checkbox-topic-common-nodes">common nodes</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-common-links">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-common-links" value="common-links">
-                                <label class="custom-control-label" for="checkbox-topic-common-links">common links</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-nodes">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-nodes" value="nodes">
-                                <label class="custom-control-label" for="checkbox-topic-nodes">nodes</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-links">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-links" value="links">
-                                <label class="custom-control-label" for="checkbox-topic-links">links</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-density">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-density" value="density">
-                                <label class="custom-control-label" for="checkbox-topic-density">density</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-connectivity">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-connectivity" value="connectivity">
-                                <label class="custom-control-label" for="checkbox-topic-connectivity">connectivity</label>
-                            </div>
-                            <div class="checkbox-item custom-control custom-checkbox" id="checkbox-group-outliers">
-                                <input type="checkbox" class="custom-control-input checkbox-topic-input" id="checkbox-topic-outliers" value="outliers">
-                                <label class="custom-control-label" for="checkbox-topic-outliers">outliers</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="fact-list" class="card mt-2 mx-auto">
-                    <div id="fact-list-title" class="card-header badge badge-light">STARRED FACTS</div>
-                    <div id="fact-list-body" class="card-body pt-2">
-
-                        <ul id="snapshots" class="list-group">
-                            <li>
-                                <button id="btn-star" class="btn btn-sm btn-success mb-2" type="button">Star Current
-                                    Fact</button>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
     <div id="map-selection-data" style="display: none;" data-current-selection="all"></div>
@@ -200,7 +122,7 @@
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Data Setting</h5>
+                    <h5 class="modal-title">Select dataset</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -209,6 +131,8 @@
                     <div id="data-source" class="mt-1">
                         <select id="select-data" class="custom-select custom-select-sm mb-1">
                             <option disabled="disabled" selected="selected" value="">Select a dataset</option>
+                            <option value="social">Social Netowrk</option>
+                            <option value="twitter">Twitter Retweets</option>
                             <option value="orbis">ORBIS-cost</option>
                             <option value="orbis-freq">ORBIS-freq</option>
                             <option value="commuters">Netherlands Commuters</option>
@@ -219,12 +143,10 @@
                         <div id="location-data">
                             <span class="badge badge-light mb-1" id="location-data-title">Location data: </span>
                             <span class="badge mb-1" id="location-input-label"></span>
-                            
                         </div>
                         <div id="flow-data">
                             <span class="badge badge-light mb-1" id="flow-data-title">Flow data: </span>
                             <span class="badge mb-1" id="flow-input-label"></span>
-                            
                         </div>
                         <hr class="my-2">
                         
@@ -245,7 +167,6 @@
                             flows</label>
                         <input type="range" class="custom-range" min="0" max="100" step="1" value="100" id="flow-range">
                     </div>
-                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
@@ -254,8 +175,6 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-<script src="js/vendors~app~vendor.bundle.js?e1a1f2292747fb1f6fcc"></script><script src="js/vendors~app.bundle.js?e1a1f2292747fb1f6fcc"></script><script src="js/app.bundle.js?e1a1f2292747fb1f6fcc"></script><script src="js/vendor.bundle.js?e1a1f2292747fb1f6fcc"></script></body>
+<script src="js/vendors~app~vendor.bundle.js?fa7ae9d02e4654b75c9b"></script><script src="js/vendors~app.bundle.js?fa7ae9d02e4654b75c9b"></script><script src="js/app.bundle.js?fa7ae9d02e4654b75c9b"></script><script src="js/vendor.bundle.js?fa7ae9d02e4654b75c9b"></script></body>
 
 </html>
