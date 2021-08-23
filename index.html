@@ -9,7 +9,7 @@
     <title>
         NetworkNarratives
     </title>
-<link href="css/vendors~app.css?fa7ae9d02e4654b75c9b" rel="stylesheet"><link href="css/app.css?fa7ae9d02e4654b75c9b" rel="stylesheet"></head>
+<link href="css/vendors~app.css?6f395e31653a72f3bc65" rel="stylesheet"><link href="css/app.css?6f395e31653a72f3bc65" rel="stylesheet"></head>
 
 <body>
     <nav id="navigation" class="navbar navbar-dark bg-primary">
@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-3 pr-0" id="left-container">
                 <div id="storyline" class="card mt-2 mx-auto">
-                    <div id="storyline-title" class="card-header badge badge-light">SETTINGS</div>
+                    <div id="storyline-title" class="card-header badge badge-light">Settings</div>
                     <div id="storyline-body">
                         <ul class="list-group list-group-flush">
                             <li id="storyline-select" class="list-group-item">
@@ -42,17 +42,18 @@
                                             <a id="template-option-none" class="nav-link template-option active" template-value="none" href="#">None</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option one-region disabled" template-value="one-region-volume" href="#" data-toggle="tooltip" data-placement="right" title="This is the abstact for the walkthrough: Describing the flow weights of one-region.">Describing the flow weights of [one-region]</a>
+                                            <a class="nav-link template-option multiple-regions disabled" template-value="network-overview" href="#" data-toggle="tooltip" data-placement="right" title="Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes.">Network Overview</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option two-regions disabled" template-value="two-regions-comparison" href="#" data-toggle="tooltip" data-placement="right" title="This is the abstact for the walkthrough: Comparing two regions.">Comparing [two-regions]</a>
+                                            <a class="nav-link template-option one-region disabled" template-value="one-region-link-weight" href="#" data-toggle="tooltip" data-placement="right" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Regional Link Weights</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option multiple-regions disabled" template-value="multiple-regions-summary" href="#" data-toggle="tooltip" data-placement="right" title="This is the abstact for the walkthrough: Summary of multiple regions.">Summary of [multiple-regions]</a>
+                                            <a class="nav-link template-option one-region disabled" template-value="one-region-connectivity" href="#" data-toggle="tooltip" data-placement="right" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Regional Link Connectivity</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option multiple-regions" template-value="test" href="#" data-toggle="tooltip" data-placement="auto" title="This is the abstact for the walkthrough: Abstract description.">Test</a>
+                                            <a class="nav-link template-option one-region disabled" template-value="ego-network" href="#" data-toggle="tooltip" data-placement="right" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Ego-network Analysis</a>
                                         </li>
+                                        
                                     </ul>
                                 </div>
                             </li>
@@ -116,7 +117,7 @@
             
         </div>
     </div>
-    <div id="map-selection-data" style="display: none;" data-current-selection="all"></div>
+    <input type="checkbox" id="map-selection-data" style="display: none;" data-current-selection="all">
     
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm" role="document">
@@ -131,7 +132,7 @@
                     <div id="data-source" class="mt-1">
                         <select id="select-data" class="custom-select custom-select-sm mb-1">
                             <option disabled="disabled" selected="selected" value="">Select a dataset</option>
-                            <option value="social">Social Netowrk</option>
+                            <option value="social">Social Network</option>
                             <option value="twitter">Twitter Retweets</option>
                             <option value="orbis">ORBIS-cost</option>
                             <option value="orbis-freq">ORBIS-freq</option>
@@ -141,30 +142,30 @@
                             <option disabled="disabled" value="json">Test aggregation (json)</option>
                         </select>
                         <div id="location-data">
-                            <span class="badge badge-light mb-1" id="location-data-title">Location data: </span>
+                            <span class="badge badge-light mb-1" id="location-data-title">Node data: </span>
                             <span class="badge mb-1" id="location-input-label"></span>
                         </div>
                         <div id="flow-data">
-                            <span class="badge badge-light mb-1" id="flow-data-title">Flow data: </span>
+                            <span class="badge badge-light mb-1" id="flow-data-title">Link data: </span>
                             <span class="badge mb-1" id="flow-input-label"></span>
                         </div>
                         <hr class="my-2">
                         
                         <div id="stat-data">
                             <div>
-                                <span class="badge badge-light" id="location-total-title">Total locations: </span><span class="badge" id="location-total-value"></span>
+                                <span class="badge badge-light" id="location-total-title">Total nodes: </span><span class="badge" id="location-total-value"></span>
                             </div>
                             <div>
-                                <span class="badge badge-light" id="flow-total-title">Total flows:</span><span class="badge" id="flow-total-value"></span>
+                                <span class="badge badge-light" id="flow-total-title">Total links:</span><span class="badge" id="flow-total-value"></span>
                             </div>
                         </div>
-                        <span class="badge badge-light mb-1" id="stat-distribution-title">Flow volume
+                        <span class="badge badge-light mb-1" id="stat-distribution-title">Link weight
                             distribution:</span><span class="badge"></span>
                         <div id="stat-vis"></div>
 
                         <span class="badge badge-light mb-1" id="stat-display-title">Display:</span>
                         <label for="flow-range-label" class="badge mb-1"> the top <span id="flow-range-number">100</span>%
-                            flows</label>
+                            links</label>
                         <input type="range" class="custom-range" min="0" max="100" step="1" value="100" id="flow-range">
                     </div>
                 </div>
@@ -175,6 +176,6 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/vendors~app~vendor.bundle.js?fa7ae9d02e4654b75c9b"></script><script src="js/vendors~app.bundle.js?fa7ae9d02e4654b75c9b"></script><script src="js/app.bundle.js?fa7ae9d02e4654b75c9b"></script><script src="js/vendor.bundle.js?fa7ae9d02e4654b75c9b"></script></body>
+<script src="js/vendors~app~vendor.bundle.js?6f395e31653a72f3bc65"></script><script src="js/vendors~app.bundle.js?6f395e31653a72f3bc65"></script><script src="js/app.bundle.js?6f395e31653a72f3bc65"></script><script src="js/vendor.bundle.js?6f395e31653a72f3bc65"></script></body>
 
 </html>

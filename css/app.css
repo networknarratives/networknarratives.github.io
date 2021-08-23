@@ -111,7 +111,7 @@
 
 #preview-title {
     font-size: 13px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     z-index: 100;
 }
 
