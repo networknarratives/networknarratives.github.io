@@ -21,7 +21,10 @@
 }
 
 #data-setting {
-    display: block;
+    font-size: 13px;
+}
+
+#reset {
     font-size: 13px;
 }
 
@@ -34,7 +37,6 @@
 }
 
 #template-list .template-option{
-    width: 250px;
     font-size: 11px;
     padding: 0.25em 0.5em;
 }
@@ -53,16 +55,15 @@
 }
 
 #storyline-svg {
-    /* overflow-x: auto;
-    overflow-y: auto; 
-    height: 358px; */
+    height: 377px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #storyline-svg .storyline-node circle {
     fill: #fff;
     stroke: #ccc;
     stroke-width: 1px;
-    
 }
 
 #storyline-svg .story-circle, 
@@ -86,6 +87,39 @@
 }
 
 #storyline-svg .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+}
+
+/* starred-svg */
+#starred-svg .storyline-node circle {
+    fill: #fff;
+    stroke: #ccc;
+    stroke-width: 1px;
+}
+
+#starred-svg .story-circle, 
+#starred-svg .block-circle,
+#starred-svg .circle-indicator {
+    cursor: pointer;
+}
+
+#starred-svg .fact-text {
+    cursor: pointer;
+}
+
+#starred-svg .focus {
+    fill: #f6be76 !important;
+    stroke: #f39c12 !important;
+    stroke-width: 1.5px !important;
+}
+
+#starred-svg .storyline-node text {
+    font: 12px sans-serif;
+}
+
+#starred-svg .link {
     fill: none;
     stroke: #ccc;
     stroke-width: 1px;
@@ -161,6 +195,15 @@
     font-weight: bold;
 }
 
+#slide-alert {
+    display: none;
+    position: absolute;
+    top: 260px;
+    width: 350px;
+    line-height: 30px;
+    text-align: center;
+}
+
 #slide-control-bar {
     width: 100%;
     z-index: 10;
@@ -180,6 +223,7 @@
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
+    white-space: pre-line;
 }
 
 #slide-control-buttons {

@@ -9,7 +9,7 @@
     <title>
         NetworkNarratives
     </title>
-<link href="css/vendors~app.css?6f395e31653a72f3bc65" rel="stylesheet"><link href="css/app.css?6f395e31653a72f3bc65" rel="stylesheet"></head>
+<link href="css/vendors~app.css?001d14a0113a30fb3e15" rel="stylesheet"><link href="css/app.css?001d14a0113a30fb3e15" rel="stylesheet"></head>
 
 <body>
     <nav id="navigation" class="navbar navbar-dark bg-primary">
@@ -25,6 +25,7 @@
                         <ul class="list-group list-group-flush">
                             <li id="storyline-select" class="list-group-item">
                                 <button type="button" class="btn btn-sm btn-outline-success mb-1" id="data-setting" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-cog"></i> Data setting</button>
+                                <button type="button" disabled="disabled" class="btn btn-sm btn-outline-secondary mb-1 float-right" id="reset"><i class="fas fa-sync-alt"></i> Reset</button>
                                 <div id="dataset-selection">
                                     <span id="select-dataset-title">Selected dataset:</span>
                                     <span>[</span>
@@ -96,6 +97,13 @@
                             <button id="btn-slide-back" type="button" class="btn btn-primary float-start mx-2"><i class="fas fa-chevron-left"></i></button>
                             <button id="btn-slide-next" type="button" class="btn btn-primary float-right mx-2"><i class="fas fa-chevron-right"></i></button>
                         </div>
+                        <div id="section-navigation">
+                            <span></span>
+                        </div>
+                        <div id="slide-alert" class="alert alert-dismissible alert-primary fade show">
+                            <button type="button" class="close" id="slide-alert-close">&times;</button>
+                            <strong id="slide-alert-text">Please select a single node.</strong>
+                        </div>
                     </div>
                     <div id="slide-control-bar">
                         <div id="slide-text-bar" class="text-center">
@@ -117,7 +125,7 @@
             
         </div>
     </div>
-    <input type="checkbox" id="map-selection-data" style="display: none;" data-current-selection="all">
+    <input type="checkbox" id="map-selection-data" style="display: none;" data-current-selection="all" subdata-current-selection="none">
     
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm" role="document">
@@ -132,10 +140,10 @@
                     <div id="data-source" class="mt-1">
                         <select id="select-data" class="custom-select custom-select-sm mb-1">
                             <option disabled="disabled" selected="selected" value="">Select a dataset</option>
-                            <option value="social">Social Network</option>
-                            <option value="twitter">Twitter Retweets</option>
                             <option value="orbis">ORBIS-cost</option>
                             <option value="orbis-freq">ORBIS-freq</option>
+                            <option value="social">Social Network</option>
+                            <option value="twitter">Twitter Retweets</option>
                             <option value="commuters">Netherlands Commuters</option>
                             <option value="bike">Bike Sharing</option>
                             <option disabled="disabled" value="migration">US Migration</option>
@@ -176,6 +184,6 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/vendors~app~vendor.bundle.js?6f395e31653a72f3bc65"></script><script src="js/vendors~app.bundle.js?6f395e31653a72f3bc65"></script><script src="js/app.bundle.js?6f395e31653a72f3bc65"></script><script src="js/vendor.bundle.js?6f395e31653a72f3bc65"></script></body>
+<script src="js/vendors~app~vendor.bundle.js?001d14a0113a30fb3e15"></script><script src="js/vendors~app.bundle.js?001d14a0113a30fb3e15"></script><script src="js/app.bundle.js?001d14a0113a30fb3e15"></script><script src="js/vendor.bundle.js?001d14a0113a30fb3e15"></script></body>
 
 </html>
