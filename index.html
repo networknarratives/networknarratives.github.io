@@ -9,7 +9,7 @@
     <title>
         NetworkNarratives
     </title>
-<link href="css/vendors~app.css?001d14a0113a30fb3e15" rel="stylesheet"><link href="css/app.css?001d14a0113a30fb3e15" rel="stylesheet"></head>
+<link href="css/vendors~app.css?126fc35332a531086448" rel="stylesheet"><link href="css/app.css?126fc35332a531086448" rel="stylesheet"></head>
 
 <body>
     <nav id="navigation" class="navbar navbar-dark bg-primary">
@@ -46,15 +46,16 @@
                                             <a class="nav-link template-option multiple-regions disabled" template-value="network-overview" href="#" data-toggle="tooltip" data-placement="right" title="Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes.">Network Overview</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option one-region disabled" template-value="one-region-link-weight" href="#" data-toggle="tooltip" data-placement="right" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Regional Link Weights</a>
+                                            <a class="nav-link template-option one-region disabled" template-value="subgraph-overview" href="#" data-toggle="tooltip" data-placement="right" title="Review a specific subgraph, it's important nodes, density, links, and ties to the rest of the network.">Subgraph Overview</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link template-option one-region disabled" template-value="one-region-connectivity" href="#" data-toggle="tooltip" data-placement="right" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Regional Link Connectivity</a>
-                                        </li>
+
                                         <li class="nav-item">
                                             <a class="nav-link template-option one-region disabled" template-value="ego-network" href="#" data-toggle="tooltip" data-placement="right" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Ego-network Analysis</a>
                                         </li>
                                         
+                                        <li class="nav-item">
+                                            <a class="nav-link template-option multiple-regions" template-value="test" href="#" data-toggle="tooltip" data-placement="auto" title="This is the abstact for the walkthrough: Abstract description.">Test</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -104,6 +105,18 @@
                             <button type="button" class="close" id="slide-alert-close">&times;</button>
                             <strong id="slide-alert-text">Please select a single node.</strong>
                         </div>
+                        <div id="slide-popup-start" class="alert">
+                            <strong>Selected walkthrough:</strong>
+                            <h2 id="slide-popup-start-title"></h2>
+                            <div id="slide-popup-start-abstract"></div>
+                            <button type="button" class="btn btn-primary btn-lg" id="slide-popup-start-button"><i class="far fa-play-circle"></i> Start</button>
+                        </div>
+                        <div id="slide-popup-section" class="alert text-center">
+                            <div class="mt-5">Next Section:</div>
+                            <h3 id="slide-popup-section-title">Node Information</h3>
+                            <div id="slide-popup-section-progress">2/3</div>
+                            <button type="button" class="btn btn-primary btn-lg mt-5" id="slide-popup-section-button"><i class="far fa-arrow-alt-circle-right"></i> Continue</button>
+                        </div>
                     </div>
                     <div id="slide-control-bar">
                         <div id="slide-text-bar" class="text-center">
@@ -113,8 +126,8 @@
                             <button id="btn-block-back" type="button" class="btn btn-secondary btn-sm"><i class="fas fa-fast-backward"></i> Previous section</button>
                             <button id="btn-fact-back" type="button" class="btn btn-success btn-sm"><i class="fas fa-step-backward"></i> Previous slide</button>
                             <div class="d-flex justify-content-center">
-                                <button disabled="disabled" id="btn-more" type="button" class="btn btn-primary btn-sm mr-2">More about this section <i class="fas fa-chevron-circle-down"></i></button>
-                                <button disabled="disabled" id="btn-extension" type="button" class="btn btn-primary btn-sm">More about this slide <i class="fas fa-plus-circle"></i></button>
+                                <button disabled="disabled" id="btn-more" type="button" class="btn btn-secondary btn-sm mr-2">More about this section <i class="fas fa-chevron-circle-down"></i></button>
+                                <button disabled="disabled" id="btn-extension" type="button" class="btn btn-secondary btn-sm">More about this slide <i class="fas fa-plus-circle"></i></button>
                             </div>
                             <button id="btn-fact-next" type="button" class="btn btn-success btn-sm">Next slide <i class="fas fa-step-forward"></i></button>
                             <button id="btn-block-next" type="button" class="btn btn-secondary btn-sm">Next section <i class="fas fa-fast-forward"></i></button>
@@ -142,10 +155,10 @@
                             <option disabled="disabled" selected="selected" value="">Select a dataset</option>
                             <option value="orbis">ORBIS-cost</option>
                             <option value="orbis-freq">ORBIS-freq</option>
-                            <option value="social">Social Network</option>
-                            <option value="twitter">Twitter Retweets</option>
+                            <option value="twitter">Twitter-retweet</option>
                             <option value="commuters">Netherlands Commuters</option>
                             <option value="bike">Bike Sharing</option>
+                            <option disabled="disabled" value="social">Social Network</option>
                             <option disabled="disabled" value="migration">US Migration</option>
                             <option disabled="disabled" value="json">Test aggregation (json)</option>
                         </select>
@@ -184,6 +197,6 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/vendors~app~vendor.bundle.js?001d14a0113a30fb3e15"></script><script src="js/vendors~app.bundle.js?001d14a0113a30fb3e15"></script><script src="js/app.bundle.js?001d14a0113a30fb3e15"></script><script src="js/vendor.bundle.js?001d14a0113a30fb3e15"></script></body>
+<script src="js/vendors~app~vendor.bundle.js?126fc35332a531086448"></script><script src="js/vendors~app.bundle.js?126fc35332a531086448"></script><script src="js/app.bundle.js?126fc35332a531086448"></script><script src="js/vendor.bundle.js?126fc35332a531086448"></script></body>
 
 </html>
