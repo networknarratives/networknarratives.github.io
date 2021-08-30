@@ -9,7 +9,7 @@
     <title>
         NetworkNarratives
     </title>
-<link href="css/vendors~app.css?126fc35332a531086448" rel="stylesheet"><link href="css/app.css?126fc35332a531086448" rel="stylesheet"></head>
+<link href="css/vendors~app.css?2f727027c4b7511e346e" rel="stylesheet"><link href="css/app.css?2f727027c4b7511e346e" rel="stylesheet"></head>
 
 <body>
     <nav id="navigation" class="navbar navbar-dark bg-primary">
@@ -32,10 +32,10 @@
                                     <span id="select-dataset-label"></span>
                                     <span>]</span>
                                 </div>
-                                <hr class="my-2">
+                                <hr class="my-1">
                                 <div>
                                     <div>
-                                        <div id="walkthrough-select-title">Select a walkthrough: </div>
+                                        <span id="walkthrough-select-title">Select a walkthrough: </span>
                                         
                                     </div>
                                     <ul id="template-list" class="nav nav-pills flex-column mt-1">
@@ -43,18 +43,31 @@
                                             <a id="template-option-none" class="nav-link template-option active" template-value="none" href="#">None</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option multiple-regions disabled" template-value="network-overview" href="#" data-toggle="tooltip" data-placement="right" title="Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes.">Network Overview</a>
+                                            <a class="nav-link template-option" template-type="overall" template-value="network-overview" href="#" title="Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes.">Network Overview</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option one-region disabled" template-value="subgraph-overview" href="#" data-toggle="tooltip" data-placement="right" title="Review a specific subgraph, it's important nodes, density, links, and ties to the rest of the network.">Subgraph Overview</a>
+                                            <a class="nav-link template-option" template-type="subgraph" template-value="subgraph-overview" href="#" title="Review a specific subgraph, it's important nodes, density, links, and ties to the rest of the network.">Subgraph Overview</a>
                                         </li>
-
                                         <li class="nav-item">
-                                            <a class="nav-link template-option one-region disabled" template-value="ego-network" href="#" data-toggle="tooltip" data-placement="right" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Ego-network Analysis</a>
+                                            <a class="nav-link template-option" template-type="one-node" template-value="ego-network" href="#" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Ego-network Analysis</a>
                                         </li>
-                                        
                                         <li class="nav-item">
-                                            <a class="nav-link template-option multiple-regions" template-value="test" href="#" data-toggle="tooltip" data-placement="auto" title="This is the abstact for the walkthrough: Abstract description.">Test</a>
+                                            <a class="nav-link template-option multiple-regions" template-type="overall" template-value="test" href="#" title="This is the abstact for the walkthrough: Abstract description.">Test</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link template-option disabled" template-type="two-subgraphs" template-value="two-subgraphs-comparison" href="#" title="This is the abstact for the walkthrough: ...">Subgraph Comparison</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link template-option disabled" template-type="two-nodes" template-value="two-nodes-comparison" href="#" title="This is the abstact for the walkthrough: ...">Compare two ndoes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link template-option disabled" template-type="two-nodes" template-value="two-nodes-paths" href="#" title="This is the abstact for the walkthrough: ...">Possible paths between two nodes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link template-option disabled" template-type="overall" template-value="cluster-exploration" href="#" title="This is the abstact for the walkthrough: ...">Cluster exploration</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link template-option disabled" template-type="overall" template-value="centrality-exploration" href="#" title="This is the abstact for the walkthrough: ...">Centrality exploration</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -103,7 +116,7 @@
                         </div>
                         <div id="slide-alert" class="alert alert-dismissible alert-primary fade show">
                             <button type="button" class="close" id="slide-alert-close">&times;</button>
-                            <strong id="slide-alert-text">Please select a single node.</strong>
+                            <strong id="slide-alert-text"></strong>
                         </div>
                         <div id="slide-popup-start" class="alert">
                             <strong>Selected walkthrough:</strong>
@@ -116,6 +129,20 @@
                             <h3 id="slide-popup-section-title">Node Information</h3>
                             <div id="slide-popup-section-progress">2/3</div>
                             <button type="button" class="btn btn-primary btn-lg mt-5" id="slide-popup-section-button"><i class="far fa-arrow-alt-circle-right"></i> Continue</button>
+                        </div>
+                        <div id="slide-popup-end" class="alert">
+                            <div><strong>Related walkthrough(s):</strong></div>
+                            <div id="related-walkthroughs" class="d-flex justify-content-between mt-3">
+                                <div class="related-walkthrough">
+                                    <a class="slide-popup-end-walkthrough-title" href="#" template-value="subgraph-overview">Subgraph Overview</a>
+                                    <div class="slide-popup-end-walkthrough-abstract">Review a specific subgraph, it's important nodes, density, links, and ties to the rest of the network.</div>
+                                </div>
+                                <div class="related-walkthrough">
+                                    <a class="slide-popup-end-walkthrough-title" href="#" template-value="ego-network">Ego-network Analysis</a>
+                                    <div id="slide-popup-end-walkthrough-abstract">Explores trends and outliers in link weights in a set of user-specific nodes.</div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg" id="slide-popup-end-button"><i class="far fa-times-circle"></i> Close</button>
                         </div>
                     </div>
                     <div id="slide-control-bar">
@@ -197,6 +224,6 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/vendors~app~vendor.bundle.js?126fc35332a531086448"></script><script src="js/vendors~app.bundle.js?126fc35332a531086448"></script><script src="js/app.bundle.js?126fc35332a531086448"></script><script src="js/vendor.bundle.js?126fc35332a531086448"></script></body>
+<script src="js/vendors~app~vendor.bundle.js?2f727027c4b7511e346e"></script><script src="js/vendors~app.bundle.js?2f727027c4b7511e346e"></script><script src="js/app.bundle.js?2f727027c4b7511e346e"></script><script src="js/vendor.bundle.js?2f727027c4b7511e346e"></script></body>
 
 </html>

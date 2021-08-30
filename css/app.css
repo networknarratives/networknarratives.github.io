@@ -34,11 +34,17 @@
 
 #template-list{
     display: block;
+    overflow-y: scroll;
+    height: 110px;
 }
 
 #template-list .template-option{
     font-size: 11px;
     padding: 0.25em 0.5em;
+}
+
+.tooltip{
+    position:fixed;
 }
 
 #walkthrough-select-title {
@@ -69,6 +75,10 @@
 #storyline-svg .story-circle, 
 #storyline-svg .block-circle,
 #storyline-svg .circle-indicator {
+    cursor: pointer;
+}
+
+#storyline-svg .block-text {
     cursor: pointer;
 }
 
@@ -170,9 +180,9 @@
 
 #btn-star {
     position: absolute;
-    top: 10px;
+    top: 500px;
     left: -470px;
-    font-size: 14px;
+    font-size: 16px;
     opacity: 0.8;
     font-weight: bold;
 }
@@ -199,7 +209,7 @@
     display: none;
     position: absolute;
     top: 260px;
-    width: 350px;
+    width: 400px;
     line-height: 30px;
     text-align: center;
 }
@@ -241,6 +251,35 @@
     border: 1px solid #666666;
 }
 
+#slide-popup-end {
+    display: none;
+    color: #2d3f50;
+    position: absolute;
+    top: 150px;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 1px 1px #666666;
+    border: 1px solid #666666;
+}
+
+#slide-popup-end .slide-popup-end-walkthrough-title {
+    color: #2d3f50;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.related-walkthrough {
+    display: inline-block;
+    width: 200px;
+}
+
+#slide-popup-end-button {
+    display: block;
+    margin: 50px auto 20px;
+}
+
 #slide-control-bar {
     width: 100%;
     z-index: 10;
@@ -275,7 +314,6 @@
 	border-radius: 2px;
 	display: inline-flex;
     border: none;
-    cursor: pointer;
     font-size: 14px;
     min-height: 30px;
     min-width: 30px;
