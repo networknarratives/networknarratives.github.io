@@ -140,12 +140,15 @@
     stroke-width: 1px;
 }
 
-/* #btn-more {
+#btn-export {
+    display: none;
     position: absolute;
-    top:57px;
-    left: 180px;
-    cursor: pointer;
-} */
+    top:90px;
+    left: 210px;
+    line-height: 1;
+    padding: .25em 0.5em;
+    font-size: 12px;
+}
 
 /* Middle: Main body */
 
