@@ -9,7 +9,7 @@
     <title>
         NetworkNarratives
     </title>
-<link href="css/vendors~app.css?080b3790d2ff76af8eb2" rel="stylesheet"><link href="css/app.css?080b3790d2ff76af8eb2" rel="stylesheet"></head>
+<link href="css/vendors~app.css?f4a32c2fc36722007134" rel="stylesheet"><link href="css/app.css?f4a32c2fc36722007134" rel="stylesheet"></head>
 
 <body>
     <nav id="navigation" class="navbar navbar-dark bg-primary">
@@ -106,23 +106,21 @@
                                         <li class="nav-item">
                                             <a class="nav-link template-option disabled" template-type="one-node" template-value="ego-network-analysis" href="#" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Ego-network Analysis</a>
                                         </li>
+                                        
                                         <li class="nav-item">
-                                            <a class="nav-link template-option" template-type="overall" template-value="test" href="#" title="This is the abstact for the walkthrough: Abstract description.">Test</a>
+                                            <a class="nav-link template-option disabled" template-type="two-subgraphs" template-value="subgraph-comparison" href="#" title="Compares two specified subsets of nodes and links (e.g., regions, subgraphs).">Subgraph Comparison</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="two-subgraphs" template-value="subgraph-comparison" href="#" title="This is the abstact for the walkthrough: ...">Subgraph Comparison</a>
+                                            <a class="nav-link template-option disabled" template-type="two-nodes" template-value="two-nodes-comparison" href="#" title="Compares two nodes, their connectivity, neighborhood, and common connections.">Two Ndoes Comparison</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="two-nodes" template-value="two-nodes-comparison" href="#" title="This is the abstact for the walkthrough: ...">Two Ndoes Comparison</a>
+                                            <a class="nav-link template-option disabled" template-type="two-nodes" template-value="possible-paths-between-two-nodes" href="#" title="Explores the shortest path between two nodes and its (not so short) alternatives.">Possible Paths between Two Nodes</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="two-nodes" template-value="possible-paths-between-two-nodes" href="#" title="This is the abstact for the walkthrough: ...">Possible Paths between Two Nodes</a>
+                                            <a class="nav-link template-option disabled" template-type="overall" template-value="community-exploration" href="#" title="Explores and compares clusters in the network; their sizes, connections, and important nodes.">Community Exploration</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="overall" template-value="cluster-exploration" href="#" title="This is the abstact for the walkthrough: ...">Cluster Exploration</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="overall" template-value="centrality-exploration" href="#" title="This is the abstact for the walkthrough: ...">Centrality Exploration</a>
+                                            <a class="nav-link template-option disabled" template-type="overall" template-value="centrality-exploration" href="#" title="Explores nodes based on different centrality measures (degree, in-betweenness). ">Centrality Exploration</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link template-option disabled" template-type="" template-value="custom" href="#" title="">Custom</a>
@@ -230,11 +228,13 @@
                     <div id="data-source" class="mt-1">
                         <select id="select-data" class="custom-select custom-select-sm mb-1">
                             <option disabled="disabled" selected="selected" value="">Select a dataset</option>
+                            <option value="citation">Author Citation</option>
+                            <option value="coauthorship">Author Coauthorship</option>
+                            <option value="commuters">Netherlands Commuters</option>
+                            <option value="bike">Bike Sharing</option>
                             <option value="orbis">ORBIS-cost</option>
                             <option value="orbis-freq">ORBIS-freq</option>
                             <option value="twitter">Twitter-retweet</option>
-                            <option value="commuters">Netherlands Commuters</option>
-                            <option value="bike">Bike Sharing</option>
                             <option disabled="disabled" value="social">Social Network</option>
                             <option disabled="disabled" value="migration">US Migration</option>
                             <option disabled="disabled" value="json">Test aggregation (json)</option>
@@ -274,6 +274,6 @@
     </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/vendors~app~vendor.bundle.js?080b3790d2ff76af8eb2"></script><script src="js/vendors~app.bundle.js?080b3790d2ff76af8eb2"></script><script src="js/app.bundle.js?080b3790d2ff76af8eb2"></script><script src="js/vendor.bundle.js?080b3790d2ff76af8eb2"></script></body>
+<script src="js/vendors~app~vendor.bundle.js?f4a32c2fc36722007134"></script><script src="js/vendors~app.bundle.js?f4a32c2fc36722007134"></script><script src="js/app.bundle.js?f4a32c2fc36722007134"></script><script src="js/vendor.bundle.js?f4a32c2fc36722007134"></script></body>
 
 </html>
