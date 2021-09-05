@@ -9,7 +9,7 @@
     <title>
         NetworkNarratives
     </title>
-<link href="css/vendors~app.css?f4a32c2fc36722007134" rel="stylesheet"><link href="css/app.css?f4a32c2fc36722007134" rel="stylesheet"></head>
+<link href="css/vendors~app.css?26dc6d3e45a280e057f2" rel="stylesheet"><link href="css/app.css?26dc6d3e45a280e057f2" rel="stylesheet"></head>
 
 <body>
     <nav id="navigation" class="navbar navbar-dark bg-primary">
@@ -35,7 +35,7 @@
                                 <hr class="my-1">
                                 <div>
                                     <div>
-                                        <span id="walkthrough-select-title">Select a walkthrough: </span>
+                                        <span id="walkthrough-select-title">Select a tour: </span>
                                         <button disabled="disabled" class="btn btn-outline-primary float-right" id="walkthrough-config"><i class="fas fa-cog"></i> Config</button>
                                         
                                         <div id="walkthrough-config-body" class="popover">
@@ -122,14 +122,12 @@
                                         <li class="nav-item">
                                             <a class="nav-link template-option disabled" template-type="overall" template-value="centrality-exploration" href="#" title="Explores nodes based on different centrality measures (degree, in-betweenness). ">Centrality Exploration</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="" template-value="custom" href="#" title="">Custom</a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </li>
                             <li id="outlines" class="list-group-item">
-                                <div id="walkthrough-explanation" class="mb-1">Follow the walkthrough, using the navigation panel on the right or the overview below:</div>
+                                <div id="walkthrough-explanation" class="mb-1">Follow the tour, using the navigation panel on the right or the overview below:</div>
                                 <ul id="walkthrough-tabs" class="nav nav-tabs mb-1">
                                     <li class="nav-item">
                                         <a class="nav-link active" data-toggle="tab" href="#walkthrough-outline"><i class="fas fa-list-ul"></i> Outline</a>
@@ -164,7 +162,7 @@
                         <div id="network"></div>
                         <div id="slide-interaction">
                             <button id="btn-star" type="button" class="unstarred btn btn-sm btn-outline-primary float-start mx-2"><i class="far fa-star"></i></button>
-                            <button id="btn-slide-back" type="button" class="btn btn-primary float-start mx-2"><i class="fas fa-chevron-left"></i></button>
+                            <button disabled="disabled" id="btn-slide-back" type="button" class="btn btn-primary float-start mx-2"><i class="fas fa-chevron-left"></i></button>
                             <button id="btn-slide-next" type="button" class="btn btn-primary float-right mx-2"><i class="fas fa-chevron-right"></i></button>
                         </div>
                         <div id="section-navigation">
@@ -175,7 +173,7 @@
                             <strong id="slide-alert-text"></strong>
                         </div>
                         <div id="slide-popup-start" class="alert">
-                            <strong>Selected walkthrough:</strong>
+                            <strong>Selected tour:</strong>
                             <h2 id="slide-popup-start-title"></h2>
                             <div id="slide-popup-start-abstract"></div>
                             <button type="button" class="btn btn-primary btn-lg" id="slide-popup-start-button"><i class="far fa-play-circle"></i> Start</button>
@@ -187,7 +185,7 @@
                             <button type="button" class="btn btn-primary btn-lg mt-5" id="slide-popup-section-button"><i class="far fa-arrow-alt-circle-right"></i> Continue</button>
                         </div>
                         <div id="slide-popup-end" class="alert">
-                            <div><strong>Related walkthrough(s):</strong></div>
+                            <div><strong>Related tour(s):</strong></div>
                             <div id="related-walkthroughs" class="d-flex justify-content-around mt-3">
                                 
                             </div>
@@ -199,14 +197,14 @@
                             <span id="slide-text">Please select a dataset (<a id="data-setting-link" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-database"></i> Select dataset</a>)</span>
                         </div>
                         <div id="slide-control-buttons" class="d-flex justify-content-around align-items-center">
-                            <button id="btn-block-back" type="button" class="btn btn-success btn-sm"><i class="fas fa-fast-backward"></i> Previous section</button>
-                            <button id="btn-fact-back" type="button" class="btn btn-success btn-sm"><i class="fas fa-step-backward"></i> Previous slide</button>
+                            <button disabled="disabled" id="btn-block-back" type="button" class="btn btn-success btn-sm"><i class="fas fa-fast-backward"></i> Previous section</button>
+                            <button disabled="disabled" id="btn-fact-back" type="button" class="btn btn-success btn-sm"><i class="fas fa-step-backward"></i> Previous slide</button>
                             <div class="d-flex justify-content-center">
                                 <button disabled="disabled" id="btn-more" type="button" class="btn btn-primary btn-sm mr-2"><i class="fas fa-chevron-circle-down"></i> More about this section</button>
                                 <button disabled="disabled" id="btn-extension" type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus-circle"></i> More about this slide</button>
                             </div>
-                            <button id="btn-fact-next" type="button" class="btn btn-success btn-sm">Next slide <i class="fas fa-step-forward"></i></button>
-                            <button id="btn-block-next" type="button" class="btn btn-success btn-sm">Next section <i class="fas fa-fast-forward"></i></button>
+                            <button disabled="disabled" id="btn-fact-next" type="button" class="btn btn-success btn-sm">Next slide <i class="fas fa-step-forward"></i></button>
+                            <button disabled="disabled" id="btn-block-next" type="button" class="btn btn-success btn-sm">Next section <i class="fas fa-fast-forward"></i></button>
                         </div>
                     </div>
                 </div>
@@ -235,7 +233,7 @@
                             <option value="orbis">ORBIS-cost</option>
                             <option value="orbis-freq">ORBIS-freq</option>
                             <option value="twitter">Twitter-retweet</option>
-                            <option disabled="disabled" value="social">Social Network</option>
+                            <option value="social">Social Network</option>
                             <option disabled="disabled" value="migration">US Migration</option>
                             <option disabled="disabled" value="json">Test aggregation (json)</option>
                         </select>
@@ -274,6 +272,6 @@
     </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/vendors~app~vendor.bundle.js?f4a32c2fc36722007134"></script><script src="js/vendors~app.bundle.js?f4a32c2fc36722007134"></script><script src="js/app.bundle.js?f4a32c2fc36722007134"></script><script src="js/vendor.bundle.js?f4a32c2fc36722007134"></script></body>
+<script src="js/vendors~app~vendor.bundle.js?26dc6d3e45a280e057f2"></script><script src="js/vendors~app.bundle.js?26dc6d3e45a280e057f2"></script><script src="js/app.bundle.js?26dc6d3e45a280e057f2"></script><script src="js/vendor.bundle.js?26dc6d3e45a280e057f2"></script></body>
 
 </html>
