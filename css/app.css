@@ -117,8 +117,8 @@
 
 #storyline-svg .focus {
     fill: #fff;
-    stroke: #f39c12 !important;
-    stroke-width: 2px !important;
+    stroke: #2c3e50 !important;
+    stroke-width: 3px !important;
 }
 
 #storyline-svg .storyline-node text {
@@ -129,6 +129,15 @@
     fill: none;
     stroke: #ccc;
     stroke-width: 1px;
+}
+
+#storyline-svg .visited-text {
+    fill:#999999 !important;
+}
+
+#storyline-svg .focus-text {
+    fill: #000000 !important;
+    font-weight: bold !important;
 }
 
 /* starred-svg */
@@ -150,8 +159,8 @@
 
 #starred-svg .focus {
     fill: #fff;
-    stroke: #f39c12 !important;
-    stroke-width: 2px !important;
+    stroke: #2c3e50 !important;
+    stroke-width: 3px !important;
 }
 
 #starred-svg .storyline-node text {
