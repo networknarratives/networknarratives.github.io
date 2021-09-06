@@ -52,6 +52,30 @@
     padding: 0.25em 0.5em;
 }
 
+.type-none {
+    color: #2c3e50;
+}
+
+.type-overall {
+    color: #f39c12;
+}
+
+.type-subgraph {
+    color: #18bc9c;
+}
+
+.type-two-subgraphs {
+    color: #20c997;
+}
+
+.type-one-node {
+    color: #3498db;
+}
+
+.type-two-nodes {
+    color: #6f42c1;
+}
+
 #walkthrough-select-title {
     font-size: 13px;
 }
@@ -92,9 +116,9 @@
 }
 
 #storyline-svg .focus {
-    fill: #f6be76 !important;
+    fill: #fff;
     stroke: #f39c12 !important;
-    stroke-width: 1.5px !important;
+    stroke-width: 2px !important;
 }
 
 #storyline-svg .storyline-node text {
@@ -125,9 +149,9 @@
 }
 
 #starred-svg .focus {
-    fill: #f6be76 !important;
+    fill: #fff;
     stroke: #f39c12 !important;
-    stroke-width: 1.5px !important;
+    stroke-width: 2px !important;
 }
 
 #starred-svg .storyline-node text {

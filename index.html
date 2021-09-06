@@ -9,7 +9,7 @@
     <title>
         NetworkNarratives
     </title>
-<link href="css/vendors~app.css?26dc6d3e45a280e057f2" rel="stylesheet"><link href="css/app.css?26dc6d3e45a280e057f2" rel="stylesheet"></head>
+<link href="css/vendors~app.css?06ba0689037517306abb" rel="stylesheet"><link href="css/app.css?06ba0689037517306abb" rel="stylesheet"></head>
 
 <body>
     <nav id="navigation" class="navbar navbar-dark bg-primary">
@@ -95,39 +95,33 @@
                                     </div>
                                     <ul id="template-list" class="nav nav-pills flex-column mt-1">
                                         <li class="nav-item">
-                                            <a id="template-option-none" class="nav-link template-option active" template-type="none" template-value="none" href="#">None</a>
+                                            <a id="template-option-none" class="nav-link template-option active type-none" template-type="none" template-value="none" href="#">None</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="overall" template-value="network-overview" href="#" title="Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes.">Network Overview</a>
+                                            <a class="nav-link template-option disabled type-overall" template-type="overall" template-value="network-overview" href="#" title="Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes.">Network Overview</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="subgraph" template-value="subgraph-overview" href="#" title="Review a specific subgraph, it's important nodes, density, links, and ties to the rest of the network.">Subgraph Overview</a>
+                                            <a class="nav-link template-option disabled type-overall" template-type="overall" template-value="community-exploration" href="#" title="Explores and compares clusters in the network; their sizes, connections, and important nodes.">Community Exploration</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="one-node" template-value="ego-network-analysis" href="#" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Ego-network Analysis</a>
+                                            <a class="nav-link template-option disabled type-overall" template-type="overall" template-value="centrality-exploration" href="#" title="Explores nodes based on different centrality measures (degree, in-betweenness). ">Centrality Exploration</a>
                                         </li>
                                         
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="two-subgraphs" template-value="subgraph-comparison" href="#" title="Compares two specified subsets of nodes and links (e.g., regions, subgraphs).">Subgraph Comparison</a>
+                                            <a class="nav-link template-option disabled type-subgraph" template-type="subgraph" template-value="subgraph-overview" href="#" title="Review a specific subgraph, it's important nodes, density, links, and ties to the rest of the network.">Subgraph Overview</a>
                                         </li>
+                                        
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="two-nodes" template-value="two-nodes-comparison" href="#" title="Compares two nodes, their connectivity, neighborhood, and common connections.">Two Ndoes Comparison</a>
+                                            <a class="nav-link template-option disabled type-one-node" template-type="one-node" template-value="ego-network-analysis" href="#" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Ego-network Analysis</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="two-nodes" template-value="possible-paths-between-two-nodes" href="#" title="Explores the shortest path between two nodes and its (not so short) alternatives.">Possible Paths between Two Nodes</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="overall" template-value="community-exploration" href="#" title="Explores and compares clusters in the network; their sizes, connections, and important nodes.">Community Exploration</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link template-option disabled" template-type="overall" template-value="centrality-exploration" href="#" title="Explores nodes based on different centrality measures (degree, in-betweenness). ">Centrality Exploration</a>
-                                        </li>
+                                        
+                                        
                                         
                                     </ul>
                                 </div>
                             </li>
                             <li id="outlines" class="list-group-item">
-                                <div id="walkthrough-explanation" class="mb-1">Follow the tour, using the navigation panel on the right or the overview below:</div>
+                                <div id="walkthrough-explanation" class="mb-1">Follow the tour, using the navigation panel on the right or the overviews below:</div>
                                 <ul id="walkthrough-tabs" class="nav nav-tabs mb-1">
                                     <li class="nav-item">
                                         <a class="nav-link active" data-toggle="tab" href="#walkthrough-outline"><i class="fas fa-list-ul"></i> Outline</a>
@@ -200,8 +194,8 @@
                             <button disabled="disabled" id="btn-block-back" type="button" class="btn btn-success btn-sm"><i class="fas fa-fast-backward"></i> Previous section</button>
                             <button disabled="disabled" id="btn-fact-back" type="button" class="btn btn-success btn-sm"><i class="fas fa-step-backward"></i> Previous slide</button>
                             <div class="d-flex justify-content-center">
-                                <button disabled="disabled" id="btn-more" type="button" class="btn btn-primary btn-sm mr-2"><i class="fas fa-chevron-circle-down"></i> More about this section</button>
-                                <button disabled="disabled" id="btn-extension" type="button" class="btn btn-primary btn-sm"><i class="fas fa-plus-circle"></i> More about this slide</button>
+                                <button disabled="disabled" id="btn-more" type="button" class="btn btn-warning btn-sm mr-2"><i class="fas fa-chevron-circle-down"></i> More about this section</button>
+                                <button disabled="disabled" id="btn-extension" type="button" class="btn btn-warning btn-sm"><i class="fas fa-plus-circle"></i> More about this slide</button>
                             </div>
                             <button disabled="disabled" id="btn-fact-next" type="button" class="btn btn-success btn-sm">Next slide <i class="fas fa-step-forward"></i></button>
                             <button disabled="disabled" id="btn-block-next" type="button" class="btn btn-success btn-sm">Next section <i class="fas fa-fast-forward"></i></button>
@@ -226,14 +220,14 @@
                     <div id="data-source" class="mt-1">
                         <select id="select-data" class="custom-select custom-select-sm mb-1">
                             <option disabled="disabled" selected="selected" value="">Select a dataset</option>
-                            <option value="citation">Author Citation</option>
-                            <option value="coauthorship">Author Coauthorship</option>
                             <option value="commuters">Netherlands Commuters</option>
                             <option value="bike">Bike Sharing</option>
                             <option value="orbis">ORBIS-cost</option>
-                            <option value="orbis-freq">ORBIS-freq</option>
+                            <option value="citation">Author Citation</option>
+                            <option value="coauthorship">Author Coauthorship</option>
                             <option value="twitter">Twitter-retweet</option>
                             <option value="social">Social Network</option>
+                            <option disabled="disabled" value="orbis-freq">ORBIS-freq</option>
                             <option disabled="disabled" value="migration">US Migration</option>
                             <option disabled="disabled" value="json">Test aggregation (json)</option>
                         </select>
@@ -265,13 +259,53 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+                    <button disabled="disabled" id="btn-dataset-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#custom-modal" data-dismiss="modal"><i class="far fa-check-circle"></i> Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="custom-modal" tabindex="-1" role="dialog" aria-labelledby="custom-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Customize terminologies</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="data-source" class="mt-1">
+                        <div>
+                            <label class="col-form-label badge badge-light" for="custom-name-network">Name for the "network":</label>
+                            <input class="form-control form-control-sm" placeholder="e.g., network, dataset" id="custom-name-network" value="network">
+                        </div>
+                        <div>
+                            <label class="col-form-label badge badge-light mt-2" for="custom-name-subgraph">Name for the "subgraph":</label>
+                            <input class="form-control form-control-sm" placeholder="e.g., subgraph, nodes, region, selection" id="custom-name-subgraph" value="subgraph">
+                        </div>
+                        <div>
+                            <label class="col-form-label badge badge-light mt-2" for="custom-name-subgraph">Name for the "node":</label>
+                            <input class="form-control form-control-sm" placeholder="e.g., node, location, region" id="custom-name-node" value="node">
+                        </div>
+                        <div>
+                            <label class="col-form-label badge badge-light mt-2" for="custom-name-link">Name for the "link":</label>
+                            <input class="form-control form-control-sm" placeholder="e.g., link, relationship, connection, flow" id="custom-name-link" value="link">
+                        </div>
+                        <div>
+                            <label class="col-form-label badge badge-light mt-2" for="custom-name-subgraph">Name for the "weight":</label>
+                            <input class="form-control form-control-sm" placeholder="e.g., weight, cost" id="custom-name-weight" value="weight">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="btn-custom-modal" type="button" class="btn btn-primary" data-dismiss="modal"><i class="far fa-check-circle"></i> Confirm</button>
                 </div>
             </div>
         </div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/vendors~app~vendor.bundle.js?26dc6d3e45a280e057f2"></script><script src="js/vendors~app.bundle.js?26dc6d3e45a280e057f2"></script><script src="js/app.bundle.js?26dc6d3e45a280e057f2"></script><script src="js/vendor.bundle.js?26dc6d3e45a280e057f2"></script></body>
+<script src="js/vendors~app~vendor.bundle.js?06ba0689037517306abb"></script><script src="js/vendors~app.bundle.js?06ba0689037517306abb"></script><script src="js/app.bundle.js?06ba0689037517306abb"></script><script src="js/vendor.bundle.js?06ba0689037517306abb"></script></body>
 
 </html>
