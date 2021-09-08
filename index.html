@@ -9,7 +9,7 @@
     <title>
         NetworkNarratives
     </title>
-<link href="css/vendors~app.css?8aca84f6fc9eddf76d60" rel="stylesheet"><link href="css/app.css?8aca84f6fc9eddf76d60" rel="stylesheet"></head>
+<link href="css/vendors~app.css?edc1d9773c898558b121" rel="stylesheet"><link href="css/app.css?edc1d9773c898558b121" rel="stylesheet"></head>
 
 <body>
     <nav id="navigation" class="navbar navbar-dark bg-primary">
@@ -95,24 +95,24 @@
                                     </div>
                                     <ul id="template-list" class="nav nav-pills flex-column mt-1">
                                         <li class="nav-item">
-                                            <a id="template-option-none" class="nav-link template-option active type-none" template-type="none" template-value="none" href="#">None</a>
+                                            <a id="template-option-none" class="nav-link template-option active" template-type="none" template-value="none" href="#">None</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled type-overall" template-type="overall" template-value="network-overview" href="#" title="Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes.">Network Overview</a>
+                                            <a class="nav-link template-option disabled" template-type="overall" template-value="network-overview" href="#" title="Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes.">[overall] Network Overview</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled type-overall" template-type="overall" template-value="community-exploration" href="#" title="Explores and compares clusters in the network; their sizes, connections, and important nodes.">Community Exploration</a>
+                                            <a class="nav-link template-option disabled" template-type="overall" template-value="community-exploration" href="#" title="Explores and compares clusters in the network; their sizes, connections, and important nodes.">[overall] Community Exploration</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled type-overall" template-type="overall" template-value="centrality-exploration" href="#" title="Explores nodes based on different centrality measures (degree, in-betweenness). ">Centrality Exploration</a>
-                                        </li>
-                                        
-                                        <li class="nav-item">
-                                            <a class="nav-link template-option disabled type-subgraph" template-type="subgraph" template-value="subgraph-overview" href="#" title="Review a specific subgraph, it's important nodes, density, links, and ties to the rest of the network.">Subgraph Overview</a>
+                                            <a class="nav-link template-option disabled" template-type="overall" template-value="centrality-exploration" href="#" title="Explores nodes based on different centrality measures (degree, in-betweenness). ">[overall] Centrality Exploration</a>
                                         </li>
                                         
                                         <li class="nav-item">
-                                            <a class="nav-link template-option disabled type-one-node" template-type="one-node" template-value="ego-network-analysis" href="#" title="Explores trends and outliers in link weights in a set of user-specific nodes.">Ego-network Analysis</a>
+                                            <a class="nav-link template-option disabled" template-type="subgraph" template-value="subgraph-overview" href="#" title="Review a specific subgraph, it's important nodes, density, links, and ties to the rest of the network.">[subgraph] Subgraph Overview</a>
+                                        </li>
+                                        
+                                        <li class="nav-item">
+                                            <a class="nav-link template-option disabled" template-type="one-node" template-value="ego-network-analysis" href="#" title="Explores trends and outliers in link weights in a set of user-specific nodes.">[one-node] Ego-network Analysis</a>
                                         </li>
                                         
                                         
@@ -159,9 +159,6 @@
                             <button disabled="disabled" id="btn-slide-back" type="button" class="btn btn-primary float-start mx-2"><i class="fas fa-chevron-left"></i></button>
                             <button id="btn-slide-next" type="button" class="btn btn-primary float-right mx-2"><i class="fas fa-chevron-right"></i></button>
                         </div>
-                        <div id="section-navigation">
-                            <span></span>
-                        </div>
                         <div id="slide-alert" class="alert alert-dismissible alert-primary fade show">
                             <button type="button" class="close" id="slide-alert-close">&times;</button>
                             <strong id="slide-alert-text"></strong>
@@ -193,12 +190,20 @@
                         <div id="slide-control-buttons" class="d-flex justify-content-around align-items-center">
                             <button disabled="disabled" id="btn-block-back" type="button" class="btn btn-success btn-sm"><i class="fas fa-fast-backward"></i> Previous section</button>
                             <button disabled="disabled" id="btn-fact-back" type="button" class="btn btn-success btn-sm"><i class="fas fa-step-backward"></i> Previous slide</button>
-                            <div class="d-flex justify-content-center">
-                                <button disabled="disabled" id="btn-more" type="button" class="btn btn-warning btn-sm mr-2"><i class="fas fa-chevron-circle-down"></i> More about this section</button>
-                                <button disabled="disabled" id="btn-extension" type="button" class="btn btn-warning btn-sm"><i class="fas fa-plus-circle"></i> More about this slide</button>
-                            </div>
+                            <button disabled="disabled" id="btn-more" type="button" class="btn btn-warning btn-sm"><i class="fas fa-chevron-circle-down"></i> More about this section</button>
+                            <button disabled="disabled" id="btn-extension" type="button" class="btn btn-warning btn-sm"><i class="fas fa-plus-circle"></i> More about this slide</button>
                             <button disabled="disabled" id="btn-fact-next" type="button" class="btn btn-success btn-sm">Next slide <i class="fas fa-step-forward"></i></button>
                             <button disabled="disabled" id="btn-block-next" type="button" class="btn btn-success btn-sm">Next section <i class="fas fa-fast-forward"></i></button>
+                            <button disabled="disabled" id="btn-related-walkthrough" type="button" class="btn btn-danger btn-sm"><i class="fas fa-directions"></i> Related tour</button>
+                        </div>
+                        
+                        <div id="related-walkthrough-popover" class="popover">
+                            <div class="arrow"></div>
+                            <div class="popover-header">Related tour(s)<button type="button" class="close" id="related-walkthrough-close">&times;</button></div>
+                            <div id="related-walkthrough-links" class="popover-body">
+                                
+                            
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -269,31 +274,32 @@
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Customize terminologies</h5>
+                    <h5 class="modal-title">Terminology customization</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div id="data-source" class="mt-1">
+                        <p style="font-size: 13px;">In your network, what terminologies do you use for the following concepts?</p>
                         <div>
-                            <label class="col-form-label badge badge-light" for="custom-name-network">Name for the "network":</label>
+                            <label class="col-form-label badge badge-light" for="custom-name-network">network:</label>
                             <input class="form-control form-control-sm" placeholder="e.g., network, dataset" id="custom-name-network" value="network">
                         </div>
                         <div>
-                            <label class="col-form-label badge badge-light mt-2" for="custom-name-subgraph">Name for the "subgraph":</label>
+                            <label class="col-form-label badge badge-light mt-2" for="custom-name-subgraph">subgraph:</label>
                             <input class="form-control form-control-sm" placeholder="e.g., subgraph, nodes, region, selection" id="custom-name-subgraph" value="subgraph">
                         </div>
                         <div>
-                            <label class="col-form-label badge badge-light mt-2" for="custom-name-subgraph">Name for the "node":</label>
+                            <label class="col-form-label badge badge-light mt-2" for="custom-name-subgraph">node:</label>
                             <input class="form-control form-control-sm" placeholder="e.g., node, location, region" id="custom-name-node" value="node">
                         </div>
                         <div>
-                            <label class="col-form-label badge badge-light mt-2" for="custom-name-link">Name for the "link":</label>
+                            <label class="col-form-label badge badge-light mt-2" for="custom-name-link">link:</label>
                             <input class="form-control form-control-sm" placeholder="e.g., link, relationship, connection, flow" id="custom-name-link" value="link">
                         </div>
                         <div>
-                            <label class="col-form-label badge badge-light mt-2" for="custom-name-subgraph">Name for the "weight":</label>
+                            <label class="col-form-label badge badge-light mt-2" for="custom-name-subgraph">weight:</label>
                             <input class="form-control form-control-sm" placeholder="e.g., weight, cost" id="custom-name-weight" value="weight">
                         </div>
                     </div>
@@ -306,6 +312,6 @@
     </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="js/vendors~app~vendor.bundle.js?8aca84f6fc9eddf76d60"></script><script src="js/vendors~app.bundle.js?8aca84f6fc9eddf76d60"></script><script src="js/app.bundle.js?8aca84f6fc9eddf76d60"></script><script src="js/vendor.bundle.js?8aca84f6fc9eddf76d60"></script></body>
+<script src="js/vendors~app~vendor.bundle.js?edc1d9773c898558b121"></script><script src="js/vendors~app.bundle.js?edc1d9773c898558b121"></script><script src="js/app.bundle.js?edc1d9773c898558b121"></script><script src="js/vendor.bundle.js?edc1d9773c898558b121"></script></body>
 
 </html>

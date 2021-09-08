@@ -64,16 +64,16 @@
     color: #18bc9c;
 }
 
-.type-two-subgraphs {
-    color: #20c997;
-}
-
 .type-one-node {
     color: #3498db;
 }
 
 .type-two-nodes {
     color: #6f42c1;
+}
+
+.type-two-subgraphs {
+    color: #20c997;
 }
 
 #walkthrough-select-title {
@@ -116,9 +116,9 @@
 }
 
 #storyline-svg .focus {
-    fill: #fff;
-    stroke: #2c3e50 !important;
-    stroke-width: 3px !important;
+    fill: #f6be76;
+    stroke: #f39c12 !important;
+    stroke-width: 2px !important;
 }
 
 #storyline-svg .storyline-node text {
@@ -158,9 +158,9 @@
 }
 
 #starred-svg .focus {
-    fill: #fff;
-    stroke: #2c3e50 !important;
-    stroke-width: 3px !important;
+    fill: #f6be76 !important;
+    stroke: #f39c12 !important;
+    stroke-width: 2px !important;
 }
 
 #starred-svg .storyline-node text {
@@ -346,6 +346,22 @@
 #slide-control-buttons {
     height: 46px;
     border-top: 1px solid #DDDDDD;
+}
+
+#related-walkthrough-popover {
+    display: none;
+    top: 520px;
+    left: 717px;
+    width: 220px;
+}
+
+#related-walkthrough-close {
+    color: #2d3f50;
+}
+
+.related-walkthrough-popover-link {
+    display: block;
+    font-size: 13px;
 }
 
 /* Button */
