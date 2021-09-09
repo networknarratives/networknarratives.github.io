@@ -184,7 +184,6 @@
 
 #preview-title {
     font-size: 13px;
-    text-transform: capitalize;
     z-index: 100;
 }
 
@@ -236,6 +235,26 @@
     font-size: 24px;
     opacity: 0.8;
     font-weight: bold;
+}
+
+#btn-block-back, #btn-block-next {
+    background-color: #7cc7b5;
+    border-color: #7cc7b5;
+}
+
+#btn-block-back:hover, #btn-block-next:hover {
+    background-color: #219a80;
+    border-color: #219a80;
+}
+
+#btn-more {
+    background-color: #f6b054;
+    border-color: #f6b054;
+}
+
+#btn-more:hover{
+    background-color: #d38624;
+    border-color: #d38624;
 }
 
 #slide-alert {
@@ -356,7 +375,7 @@
     font-size: 13px;
 }
 
-/* Button */
+/* Slide button */
 .map-select-button .bp3-button {
     background-color: #f5f8fa;
 	cursor: pointer;
