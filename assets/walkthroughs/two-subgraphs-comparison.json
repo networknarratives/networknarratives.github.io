@@ -1,0 +1,55 @@
+{
+    "name": "two-subgraphs-comparison",
+    "title": "Two Subgraphs Comparison",
+    "abstract": "Compares two specified subsets of nodes and links (e.g., regions, subgraphs).",
+    "walkthrough": "walkthrough",
+    "walkthroughType": "two-subgraphs",
+    "children": [
+        {
+            "name": "general-metrics",
+            "title": "General Metrics",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": [
+                {
+                    "name": "node-number",
+                    "title": "Number of nodes",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["statistics"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-number",
+                    "title": "Number of links",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "important-nodes",
+            "title": "Important Nodes",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": []
+        },
+        {
+            "name": "connections-between",
+            "title": "Connections between two subgraphs",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": []
+        }
+    ]
+}

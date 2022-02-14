@@ -1,0 +1,128 @@
+{
+    "name": "centrality-exploration",
+    "title": "Centrality Exploration",
+    "abstract": "Explores nodes based on different centrality measures (degree, in-betweenness).",
+    "walkthrough": "walkthrough",
+    "walkthroughType": "overall",
+    "children": [
+        {
+            "name": "high-level-quantities",
+            "title": "High-level Quantities",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": [
+                {
+                    "name": "node-number",
+                    "title": "Number of nodes",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["statistics"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-number",
+                    "title": "Number of links",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "network-density",
+                    "title": "Network density",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["density"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "degree-centrality",
+            "title": "Degree Centrality",
+            "walkthrough": "section",
+            "sectionType": "centrality",
+            "children": [
+                {
+                    "name": "average-degree-centrality",
+                    "title": "Average degree centrality",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "most-connected-node",
+                    "title": "Most connected node",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "one-node"
+                }
+            ]
+        },
+        {
+            "name": "betweenness-centrality",
+            "title": "Betweenness Centrality",
+            "walkthrough": "section",
+            "sectionType": "centrality",
+            "children": [
+                {
+                    "name": "highest-betweenness-centrality",
+                    "title": "Highest betweenness centrality",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "nodes"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "one-node"
+                }
+            ]
+        },
+        {
+            "name": "closeness-centrality",
+            "title": "Closeness Centrality",
+            "walkthrough": "section",
+            "sectionType": "centrality",
+            "children": [
+                {
+                    "name": "highest-closeness-centrality",
+                    "title": "Highest closeness centrality",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "nodes"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "one-node"
+                }
+            ]
+        }
+    ]
+}

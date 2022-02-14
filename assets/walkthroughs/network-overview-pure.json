@@ -1,0 +1,182 @@
+{
+    "name": "network-overview",
+    "title": "Network Overview",
+    "abstract": "Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes.",
+    "walkthrough": "walkthrough",
+    "walkthroughType": "overall",
+    "children": [
+        {
+            "name": "main-info-overall",
+            "title": "Main Information",
+            "walkthrough": "section",
+            "sectionType": "geography",
+            "children": [
+                {
+                    "name": "node-number",
+                    "title": "Number of nodes",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["geography"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-number",
+                    "title": "Number of links",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "network-density",
+                    "title": "Network density",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["density"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "link-weight-info-overall",
+            "title": "Link Information",
+            "walkthrough": "section",
+            "sectionType": "weight",
+            "children": [
+                {
+                    "name": "total-link-weight",
+                    "title": "Total link weight",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "average-link-weight",
+                    "title": "Average link weight",
+                    "text": "",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "walkthrough": "slide",
+                    "extensible": true,
+                    "extension": null
+                },
+                {
+                    "name": "strongest-link",
+                    "title": "Strongest link",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null
+                },
+                {
+                    "name": "weakest-link",
+                    "title": "Weakest link",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "connectivity-info-overall",
+            "title": "Node Centrality",
+            "walkthrough": "section",
+            "sectionType": "connectivity",
+            "children": [
+                {
+                    "name": "node-degree-outlier-top",
+                    "title": "Top connected nodes (highest degree)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null,
+                    "return": "subgraph"
+                },
+                {
+                    "name": "most-connected-node",
+                    "title": "Most connected node",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "one-node"
+                },
+                {
+                    "name": "node-most-incoming-link",
+                    "title": "Node with most incoming links",
+                    "text": "",
+                    "scope": "overall",
+                    "linkType": "directed",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "walkthrough": "slide",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "one-node"
+                },
+                {
+                    "name": "node-most-outgoing-link",
+                    "title": "Node with most outgoing links",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "directed",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "one-node"
+                },
+                {
+                    "name": "node-degree-outlier-bottom",
+                    "title": "Least connected nodes (lowest degree)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["outliers"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null,
+                    "return": "subgraph"
+                }
+            ]
+        }
+    ]
+}

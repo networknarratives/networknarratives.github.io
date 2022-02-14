@@ -1,0 +1,32 @@
+[
+    {
+        "name": "network-overview",
+        "title": "Network Overview",
+        "type": "overall",
+        "abstract": "Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes."
+    },
+    {
+        "name": "community-exploration",
+        "title": "Community Exploration",
+        "type": "overall",
+        "abstract": "Explores and compares clusters in the network; their sizes, connections, and important nodes."
+    },
+    {
+        "name": "centrality-exploration",
+        "title": "Centrality Exploration",
+        "type": "overall",
+        "abstract": "Explores nodes based on different centrality measures (degree, in-betweenness)."
+    },
+    {
+        "name": "subgraph-overview",
+        "title": "Subgraph Overview",
+        "type": "subgraph",
+        "abstract": "Reviews a specific subgraph, it's important nodes, density, links, and ties to the rest of the network."
+    },
+    {
+        "name": "ego-network-analysis",
+        "title": "Ego-network Analysis",
+        "type": "one-node",
+        "abstract": "Explores the network around a specified node and its neighbors, including important nodes and eventual link weights."
+    }
+]

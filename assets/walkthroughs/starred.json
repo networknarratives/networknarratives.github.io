@@ -1,0 +1,16 @@
+{
+    "name": "starred-slides",
+    "title": "Starred Slides",
+    "walkthrough": "walkthrough",
+    "walkthroughType": "none",
+    "abstract": "",
+    "children": [
+        {
+            "name": "all-starred-slides",
+            "title": "All starred slides",
+            "walkthrough": "section",
+            "sectionType": "none",
+            "children": []
+        }
+    ]
+}

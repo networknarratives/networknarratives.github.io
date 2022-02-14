@@ -1,0 +1,122 @@
+{
+    "name": "community-exploration",
+    "title": "Community Exploration",
+    "abstract": "Explores and compares clusters in the network; their sizes, connections, and important nodes.",
+    "walkthrough": "walkthrough",
+    "walkthroughType": "overall",
+    "children": [
+        {
+            "name": "cluster-info-overall",
+            "title": "Clusters",
+            "walkthrough": "section",
+            "sectionType": "connectivity",
+            "children": [
+                {
+                    "name": "node-cluster",
+                    "title": "Node clusters",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "overview"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "largest-cluster",
+                    "title": "Largest cluster",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "overview"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "subgraph"
+                },
+                {
+                    "name": "smallest-cluster",
+                    "title": "Smallest cluster",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "overview"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "subgraph"
+                }
+            ]
+        },
+        {
+            "name": "connection-info-overall",
+            "title": "Connections",
+            "walkthrough": "section",
+            "sectionType": "connectivity",
+            "children": [
+                {
+                    "name": "link-number-clusters",
+                    "title": "Link number (clusters)",
+                    "walkthrough": "slide",
+                    "scope": "nodes",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "statistics"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "most-connected-cluster",
+                    "title": "Most connected cluster",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "subgraph"
+                },
+                {
+                    "name": "least-connected-cluster",
+                    "title": "Least connected cluster",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "subgraph"
+                }
+            ]
+        },
+        {
+            "name": "node-connectivity-overall",
+            "title": "Node Connectivity",
+            "walkthrough": "section",
+            "sectionType": "connectivity",
+            "children": [
+                {
+                    "name": "most-connected-node-cluster",
+                    "title": "Most connected node (cluster)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "nodes"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "one-node"
+                }
+            ]
+        }
+    ]
+}

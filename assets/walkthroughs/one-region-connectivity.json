@@ -1,0 +1,120 @@
+{
+    "name": "one-region-link-connectivity",
+    "title": "Regional Link Connectivity",
+    "walkthrough": "walkthrough",
+    "walkthroughType": "subgraph",
+    "children": [
+        {
+            "name": "basic-info-regional",
+            "title": "Basic Information",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": [
+                {
+                    "name": "node-number-regional",
+                    "title": "Number of locations (regional)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": "statistics",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-number-regional",
+                    "title": "Number of links (regional)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": "connectivity",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "link-connectivity-regional",
+            "title": "Connectivity Information",
+            "walkthrough": "section",
+            "sectionType": "connectivity",
+            "children": [
+                {
+                    "name": "average-degree-centrality-regional",
+                    "title": "Average degree centrality (regional)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": "statistics",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "most-connected-node-regional",
+                    "title": "Most connected node (regional)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": "connectivity",
+                    "text": "",
+                    "extensible": true,
+                    "extension": null
+                },
+                {
+                    "name": "node-degree-outlier-top-regional",
+                    "title": "Node outliers by degree centrality (top)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": "outliers",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "node-degree-outlier-bottom-regional",
+                    "title": "Node outliers by degree centrality (bottom)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": "outliers",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "neighboring-node-regional",
+                    "title": "Neighboring nodes of the region",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": "connectivity",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "neighboring-link-regional",
+                    "title": "Neighboring links of the region",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": "connectivity",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        }
+    ]
+}

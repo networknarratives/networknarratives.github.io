@@ -1,0 +1,231 @@
+{
+    "name": "subgraph-overview",
+    "title": "Subgraph Overview",
+    "abstract": "Review a specific subgraph, it's important nodes, density, links, and ties to the rest of the network.",
+    "walkthrough": "walkthrough",
+    "walkthroughType": "subgraph",
+    "children": [
+        {
+            "name": "overview-info",
+            "title": "Overview",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": [
+                {
+                    "name": "node-number-regional",
+                    "title": "Number of nodes (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["statistics"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-number-regional",
+                    "title": "Number of links (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "subgraph-density",
+                    "title": "Subgraph density",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["density"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "subgraph-density-comparison",
+                    "title": "Subgraph density comparison",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["density"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "node-info",
+            "title": "Node Information",
+            "walkthrough": "section",
+            "sectionType": "connectivity",
+            "children": [
+                {
+                    "name": "most-connected-node-regional",
+                    "title": "Most connected node (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "nodes"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "one-node"
+                },
+                {
+                    "name": "most-connected-node-regional-ranking",
+                    "title": "Connectivity ranking (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "statistics"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "most-connected-node-regional-link-weight-ranking",
+                    "title": "Link weight ranking (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["weight", "statistics"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "least-connected-node-regional",
+                    "title": "Least connected node (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "nodes"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "one-node"
+                },
+                {
+                    "name": "least-connected-node-regional-ranking",
+                    "title": "Connectivity ranking (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "statistics"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "link-info",
+            "title": "Link Information",
+            "walkthrough": "section",
+            "sectionType": "connectivity",
+            "children": [
+                {
+                    "name": "total-link-weight-regional",
+                    "title": "Total link weight (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight", "statistics"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "strongest-link-regional",
+                    "title": "Strongest link (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null
+                },
+                {
+                    "name": "weakest-link-regional",
+                    "title": "Weakest link (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "relation-info",
+            "title": "Relations to the Rest",
+            "walkthrough": "section",
+            "sectionType": "connectivity",
+            "children": [
+                {
+                    "name": "outside-connection-regional",
+                    "title": "Outside connections (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "strongest-link-outside",
+                    "title": "Strongest link outside",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "subgraph-cluster",
+            "title": "Clusters",
+            "walkthrough": "section",
+            "sectionType": "connectivity",
+            "children": [
+                {
+                    "name": "node-cluster-regional",
+                    "title": "Node clusters (subgraph)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "nodes", "weight"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        }
+    ]
+}

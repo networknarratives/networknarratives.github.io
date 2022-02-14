@@ -1,0 +1,229 @@
+{
+    "name": "ego-network-analysis",
+    "title": "Ego-network Analysis",
+    "abstract": "Explores the network around a specified node and its neighbors, including important nodes and eventual link weights.",
+    "walkthrough": "walkthrough",
+    "walkthroughType": "one-node",
+    "children": [
+        {
+            "name": "general-info-node",
+            "title": "General Information",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": [
+                {
+                    "name": "node-name",
+                    "title": "Node Name",
+                    "walkthrough": "slide",
+                    "scope": "node",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["statistics"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "node-geography",
+                    "title": "Node geography",
+                    "walkthrough": "slide",
+                    "scope": "node",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["geography"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-weight-sum-node",
+                    "title": "Sum of link weight (Node)",
+                    "walkthrough": "slide",
+                    "scope": "node",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "connectivity-ranking-node",
+                    "title": "Connectivity ranking (Node)",
+                    "walkthrough": "slide",
+                    "scope": "node",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "ego-connection-node",
+            "title": "Ego Connections",
+            "walkthrough": "section",
+            "sectionType": "node-neighbors",
+            "children": [
+                {
+                    "name": "neighboring-node-node",
+                    "title": "Neighboring nodes of the node",
+                    "walkthrough": "slide",
+                    "scope": "node",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["node-neighbors"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null,
+                    "return": "subgraph"
+                },
+                {
+                    "name": "neighboring-node-proportion",
+                    "title": "Neighboring nodes proportion",
+                    "walkthrough": "slide",
+                    "scope": "node",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["node-neighbors"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "largest-link-neighbor",
+                    "title": "Strongest link (neighbors)",
+                    "walkthrough": "slide",
+                    "scope": "node",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null
+                },
+                {
+                    "name": "smallest-link-neighbor",
+                    "title": "Weakest link (neighbors)",
+                    "walkthrough": "slide",
+                    "scope": "node",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null
+                },
+                {
+                    "name": "farthest-node-neighbor",
+                    "title": "Farthest node (neighbors)",
+                    "walkthrough": "slide",
+                    "scope": "nodes",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null,
+                    "return": "one-node"
+                },
+                {
+                    "name": "neighboring-link-number",
+                    "title": "Neighboring link number",
+                    "walkthrough": "slide",
+                    "scope": "node",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "neighboring-link-weight-proportion",
+                    "title": "Neigboring link weight proportion",
+                    "walkthrough": "slide",
+                    "scope": "node",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "most-connected-node-neighbor",
+                    "title": "Most connected node (neighbors)",
+                    "walkthrough": "slide",
+                    "scope": "nodes",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "one-node"
+                }
+            ]
+        },
+        {
+            "name": "further-extension",
+            "title": "Further Extension",
+            "walkthrough": "section",
+            "sectionType": "neiboring-nodes",
+            "children": [
+                {
+                    "name": "neighboring-node-neighbor",
+                    "title": "Neighboring nodes of the neighborhood",
+                    "walkthrough": "slide",
+                    "scope": "nodes",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["node-neighbors"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null,
+                    "return": "subgraph"
+                },
+                {
+                    "name": "neighboring-node-proportion-neighbor",
+                    "title": "Neighboring nodes proportion (neighbors)",
+                    "walkthrough": "slide",
+                    "scope": "nodes",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["node-neighbors"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "neighboring-link-number-neighbor",
+                    "title": "Neighboring link number (neighbors)",
+                    "walkthrough": "slide",
+                    "scope": "nodes",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "neighboring-link-weight-proportion-neighbor",
+                    "title": "Neigboring link weight proportion (neighbors)",
+                    "walkthrough": "slide",
+                    "scope": "node",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        }
+    ]
+}

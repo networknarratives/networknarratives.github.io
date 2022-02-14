@@ -1,0 +1,55 @@
+{
+    "name": "two-nodes-comparison",
+    "title": "Two Nodes Comparison",
+    "abstract": "Compares two nodes, their connectivity, neighborhood, and common connections.",
+    "walkthrough": "walkthrough",
+    "walkthroughType": "two-nodes",
+    "children": [
+        {
+            "name": "general-metrics",
+            "title": "General Metrics",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": [
+                {
+                    "name": "node-number",
+                    "title": "Number of nodes",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["statistics"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-number",
+                    "title": "Number of links",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "important-nodes",
+            "title": "Important Nodes",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": []
+        },
+        {
+            "name": "connections-between",
+            "title": "Connections between two subgraphs",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": []
+        }
+    ]
+}

@@ -1,0 +1,176 @@
+{
+    "name": "one-region-link-weight",
+    "title": "Regional Link Weights",
+    "walkthrough": "walkthrough",
+    "walkthroughType": "subgraph",
+    "children": [
+        {
+            "name": "basic-info-regional",
+            "title": "Basic Information",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": [
+                {
+                    "name": "node-number-regional",
+                    "title": "Number of locations (regional)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": "statistics",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-number-regional",
+                    "title": "Number of links (regional)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": "connectivity",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "link-weight-regional",
+            "title": "Link Weights",
+            "walkthrough": "section",
+            "sectionType": "weight",
+            "children": [
+                {
+                    "name": "total-link-weight-regional",
+                    "title": "Total link weight (regional)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": "weight",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "median-link-weight-regional",
+                    "title": "Median link weight (regional)",
+                    "text": "",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": "weight",
+                    "walkthrough": "slide",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-weight-outlier-top-regional",
+                    "title": "Link weight outliers (top)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": "outliers",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-weight-outlier-bottom-regional",
+                    "title": "Link weight outliers (bottom)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": "outliers",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        },
+        {
+            "name": "node-weight-regional",
+            "title": "Node Weights",
+            "walkthrough": "section",
+            "sectionType": "weight",
+            "children": [
+                {
+                    "name": "largest-link-gain-regional",
+                    "title": "Largest link gain (regional)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "directed",
+                    "weightType": "weighted",
+                    "topic": "weight",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "largest-link-loss-regional",
+                    "title": "Largest link loss (regional)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "directed",
+                    "weightType": "weighted",
+                    "topic": "weight",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "node-most-incoming-link-regional",
+                    "title": "Node with most incoming links (regional)",
+                    "text": "",
+                    "scope": "region",
+                    "linkType": "directed",
+                    "weightType": "weighted",
+                    "topic": "weight",
+                    "walkthrough": "slide",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "node-most-outgoing-link-regional",
+                    "title": "Node with most outgoing links (regional)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "directed",
+                    "weightType": "weighted",
+                    "topic": "weight",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-sum-outlier-top-regional",
+                    "title": "Node outliers by sum of link weights (top)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": "outliers",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "link-sum-outlier-bottom-regional",
+                    "title": "Node outliers by sum of link weights (bottom)",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": "outliers",
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
+        }
+    ]
+}

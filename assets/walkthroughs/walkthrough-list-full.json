@@ -1,0 +1,56 @@
+[
+    {
+        "name": "network-overview",
+        "title": "Network Overview",
+        "type": "overall",
+        "abstract": "Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes."
+    },
+    {
+        "name": "community-exploration",
+        "title": "Community Exploration",
+        "type": "overall",
+        "abstract": "Explores and compares clusters in the network; their sizes, connections, and important nodes."
+    },
+    {
+        "name": "centrality-exploration",
+        "title": "Centrality Exploration",
+        "type": "overall",
+        "abstract": "Explores nodes based on different centrality measures (degree, in-betweenness)."
+    },
+    {
+        "name": "subgraph-overview",
+        "title": "Subgraph Overview",
+        "type": "subgraph",
+        "abstract": "Reviews a specific subgraph, it's important nodes, density, links, and ties to the rest of the network."
+    },
+    {
+        "name": "two-subgraphs-comparison",
+        "title": "Two Subgraphs Comparison",
+        "type": "two-subgraphs",
+        "abstract": "Compares two specified subsets of nodes and links (e.g., regions, subgraphs)."
+    },
+    {
+        "name": "ego-network-analysis",
+        "title": "Ego-network Analysis",
+        "type": "one-node",
+        "abstract": "Explores the network around a specified node and its neighbors, including important nodes and eventual link weights."
+    },
+    {
+        "name": "two-nodes-comparison",
+        "title": "Two Nodes Comparison",
+        "type": "two-nodes",
+        "abstract": "Compares two nodes, their connectivity, neighborhood, and common connections."
+    },
+    {
+        "name": "possible-paths-between-two-nodes",
+        "title": "Possible Paths between Two Nodes",
+        "type": "two-nodes",
+        "abstract": "Explores the shortest path between two nodes and its (not so short) alternatives."
+    },
+    {
+        "name": "test",
+        "title": "test",
+        "type": "overall",
+        "abstract": "description"
+    }
+]
