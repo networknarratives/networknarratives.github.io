@@ -204,6 +204,18 @@
                     "text": "",
                     "extensible": true,
                     "extension": null
+                },
+                {
+                    "name": "weakest-link-outside",
+                    "title": "Weakest link outside",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null
                 }
             ]
         },
@@ -219,7 +231,7 @@
                     "walkthrough": "slide",
                     "scope": "region",
                     "linkType": "both",
-                    "weightType": "both",
+                    "weightType": "weighted",
                     "topic": ["connectivity", "nodes", "weight"],
                     "text": "",
                     "extensible": false,

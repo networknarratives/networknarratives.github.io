@@ -202,7 +202,7 @@
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
-                    "weightType": "both",
+                    "weightType": "weighted",
                     "topic": ["connectivity", "overview"],
                     "text": "",
                     "extensible": false,

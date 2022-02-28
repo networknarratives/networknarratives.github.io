@@ -79,6 +79,19 @@
                     "extensible": true,
                     "extension": null,
                     "return": "one-node"
+                },
+                {
+                    "name": "least-connected-node",
+                    "title": "Least connected node",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null,
+                    "return": "one-node"
                 }
             ]
         },

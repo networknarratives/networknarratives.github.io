@@ -6,12 +6,6 @@
         "abstract": "Overviews an entire network with respect to the number of nodes, links, density, as well as important nodes."
     },
     {
-        "name": "community-exploration",
-        "title": "Community Exploration",
-        "type": "overall",
-        "abstract": "Explores and compares clusters in the network; their sizes, connections, and important nodes."
-    },
-    {
         "name": "centrality-exploration",
         "title": "Centrality Exploration",
         "type": "overall",

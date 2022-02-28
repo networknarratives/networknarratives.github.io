@@ -238,6 +238,19 @@
                     "return": "one-node"
                 },
                 {
+                    "name": "node-most-outgoing-link-3",
+                    "title": "Node with 3rd most outgoing links",
+                    "text": "",
+                    "scope": "overall",
+                    "linkType": "directed",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "walkthrough": "slide",
+                    "extensible": false,
+                    "extension": "node-most-outgoing-link",
+                    "return": "one-node"
+                },
+                {
                     "name": "node-least-outgoing-link",
                     "title": "Node with least outgoing links",
                     "walkthrough": "slide",
@@ -1077,7 +1090,7 @@
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
-                    "weightType": "both",
+                    "weightType": "weighted",
                     "topic": ["connectivity", "overview"],
                     "text": "",
                     "extensible": false,
@@ -1369,7 +1382,7 @@
                 },
                 {
                     "name": "least-connected-node-regional-3",
-                    "title": "2nd least connected node (subgraph)",
+                    "title": "3rd least connected node (subgraph)",
                     "walkthrough": "slide",
                     "scope": "region",
                     "linkType": "both",
@@ -1465,12 +1478,48 @@
                     "extension": "strongest-link-outside"
                 },
                 {
+                    "name": "weakest-link-outside",
+                    "title": "Weakest link outside",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null
+                },
+                {
+                    "name": "weakest-link-outside-2",
+                    "title": "2nd weakest link outside",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": "weakest-link-outside"
+                },
+                {
+                    "name": "weakest-link-outside-3",
+                    "title": "3rd weakest link outside",
+                    "walkthrough": "slide",
+                    "scope": "region",
+                    "linkType": "both",
+                    "weightType": "weighted",
+                    "topic": ["weight"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": "weakest-link-outside"
+                },
+                {
                     "name": "node-cluster-regional",
                     "title": "Node clusters (subgraph)",
                     "walkthrough": "slide",
                     "scope": "region",
                     "linkType": "both",
-                    "weightType": "both",
+                    "weightType": "weighted",
                     "topic": ["connectivity", "nodes", "weight"],
                     "text": "",
                     "extensible": false,
@@ -1529,7 +1578,7 @@
                     "return": "one-node"
                 },
                 {
-                    "name": "highest-closeness-centrality- 2",
+                    "name": "highest-closeness-centrality-2",
                     "title": "2nd highest closeness centrality",
                     "walkthrough": "slide",
                     "scope": "overall",

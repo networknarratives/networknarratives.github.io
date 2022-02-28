@@ -198,30 +198,6 @@
                     "text": "",
                     "extensible": false,
                     "extension": null
-                },
-                {
-                    "name": "neighboring-link-number-neighbor",
-                    "title": "Neighboring link number (neighbors)",
-                    "walkthrough": "slide",
-                    "scope": "nodes",
-                    "linkType": "both",
-                    "weightType": "both",
-                    "topic": ["connectivity"],
-                    "text": "",
-                    "extensible": false,
-                    "extension": null
-                },
-                {
-                    "name": "neighboring-link-weight-proportion-neighbor",
-                    "title": "Neigboring link weight proportion (neighbors)",
-                    "walkthrough": "slide",
-                    "scope": "node",
-                    "linkType": "both",
-                    "weightType": "weighted",
-                    "topic": ["weight"],
-                    "text": "",
-                    "extensible": false,
-                    "extension": null
                 }
             ]
         }
