@@ -12,6 +12,12 @@
         "abstract": "Explores nodes based on different centrality measures (degree, in-betweenness)."
     },
     {
+        "name": "community-exploration",
+        "title": "Community Exploration",
+        "type": "overall",
+        "abstract": "Explores and compares clusters in the network; their sizes, connections, and important nodes."
+    },
+    {
         "name": "subgraph-overview",
         "title": "Subgraph Overview",
         "type": "subgraph",

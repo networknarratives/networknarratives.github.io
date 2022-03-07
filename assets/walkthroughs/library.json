@@ -1150,7 +1150,7 @@
                 },
                 {
                     "name": "smallest-cluster-2",
-                    "title": "Smallest cluster",
+                    "title": "2nd smallest cluster",
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
@@ -1163,7 +1163,7 @@
                 },
                 {
                     "name": "smallest-cluster-3",
-                    "title": "Smallest cluster",
+                    "title": "3rd smallest cluster",
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
@@ -1176,7 +1176,7 @@
                 },
                 {
                     "name": "link-number-clusters",
-                    "title": "Link number (clusters)",
+                    "title": "Link number between (clusters)",
                     "walkthrough": "slide",
                     "scope": "nodes",
                     "linkType": "both",
@@ -1187,8 +1187,8 @@
                     "extension": null
                 },
                 {
-                    "name": "most-connected-cluster",
-                    "title": "Most connected cluster",
+                    "name": "most-connected-outside-cluster",
+                    "title": "Most connected cluster with outside",
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
@@ -1200,8 +1200,8 @@
                     "return": "subgraph"
                 },
                 {
-                    "name": "most-connected-cluster-2",
-                    "title": "2nd most connected cluster",
+                    "name": "most-connected-outside-cluster-2",
+                    "title": "2nd most connected cluster with outside",
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
@@ -1209,12 +1209,12 @@
                     "topic": ["connectivity"],
                     "text": "",
                     "extensible": false,
-                    "extension": "most-connected-cluster",
+                    "extension": "most-connected-outside-cluster",
                     "return": "subgraph"
                 },
                 {
-                    "name": "most-connected-cluster-3",
-                    "title": "3rd most connected cluster",
+                    "name": "most-connected-outside-cluster-3",
+                    "title": "3rd most connected cluster with outside",
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
@@ -1222,12 +1222,12 @@
                     "topic": ["connectivity"],
                     "text": "",
                     "extensible": false,
-                    "extension": "most-connected-cluster",
+                    "extension": "most-connected-outside-cluster",
                     "return": "subgraph"
                 },
                 {
-                    "name": "least-connected-cluster",
-                    "title": "Least connected cluster",
+                    "name": "least-connected-outside-cluster",
+                    "title": "Least connected cluster with outside",
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
@@ -1239,8 +1239,8 @@
                     "return": "subgraph"
                 },
                 {
-                    "name": "least-connected-cluster-2",
-                    "title": "Least connected cluster",
+                    "name": "least-connected-outside-cluster-2",
+                    "title": "2nd least connected cluster with outside",
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
@@ -1248,12 +1248,12 @@
                     "topic": ["connectivity"],
                     "text": "",
                     "extensible": false,
-                    "extension": "least-connected-cluster",
+                    "extension": "least-connected-outside-cluster",
                     "return": "subgraph"
                 },
                 {
-                    "name": "least-connected-cluster-3",
-                    "title": "Least connected cluster",
+                    "name": "least-connected-outside-cluster-3",
+                    "title": "3rd least connected cluster with outside",
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
@@ -1261,7 +1261,7 @@
                     "topic": ["connectivity"],
                     "text": "",
                     "extensible": false,
-                    "extension": "least-connected-cluster",
+                    "extension": "least-connected-outside-cluster",
                     "return": "subgraph"
                 },
                 {
