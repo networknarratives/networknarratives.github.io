@@ -28,5 +28,11 @@
         "title": "Ego-network Analysis",
         "type": "one-node",
         "abstract": "Explores the network around a specified node and its neighbors, including important nodes and eventual link weights."
+    },
+    {
+        "name": "temporal-network-exploration",
+        "title": "Temporal Network Exploration",
+        "type": "overall",
+        "abstract": "Explores a temporal network with overview, evoluation and trends."
     }
 ]

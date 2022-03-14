@@ -46,5 +46,11 @@
         "title": "Possible Paths between Two Nodes",
         "type": "two-nodes",
         "abstract": "Explores the shortest path between two nodes and its (not so short) alternatives."
+    },
+    {
+        "name": "temporal-network-exploration",
+        "title": "Temporal Network Exploration",
+        "type": "overall",
+        "abstract": "Explores a temporal network with overview, evoluation and trends."
     }
 ]
