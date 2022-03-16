@@ -1,0 +1,30 @@
+{
+    "name": "temporal-network-exploration",
+    "title": "Temporal Network Exploration",
+    "abstract": "Explores a temporal network with overview, evolution and trends.",
+    "walkthrough": "walkthrough",
+    "walkthroughType": "overall",
+    "children": [
+        {
+            "name": "temporal-network-overview",
+            "title": "Overview",
+            "walkthrough": "section",
+            "sectionType": "statistics",
+            "children": []
+        },
+        {
+            "name": "temporal-network-evolution",
+            "title": "Evolution",
+            "walkthrough": "section",
+            "sectionType": "weight",
+            "children": []
+        },
+        {
+            "name": "temporal-network-trend",
+            "title": "Trends",
+            "walkthrough": "section",
+            "sectionType": "connectivity",
+            "children": []
+        }
+    ]
+}
