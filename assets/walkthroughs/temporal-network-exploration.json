@@ -9,21 +9,21 @@
             "name": "temporal-network-overview",
             "title": "Overview",
             "walkthrough": "section",
-            "sectionType": "statistics",
+            "sectionType": "overview",
             "children": []
         },
         {
             "name": "temporal-network-evolution",
             "title": "Evolution",
             "walkthrough": "section",
-            "sectionType": "weight",
+            "sectionType": "temporal",
             "children": []
         },
         {
             "name": "temporal-network-trend",
             "title": "Trends",
             "walkthrough": "section",
-            "sectionType": "connectivity",
+            "sectionType": "temporal",
             "children": []
         }
     ]
