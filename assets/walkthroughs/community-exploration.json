@@ -17,7 +17,7 @@
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
-                    "weightType": "weighted",
+                    "weightType": "both",
                     "topic": ["connectivity", "overview"],
                     "text": "",
                     "extensible": false,
@@ -29,7 +29,7 @@
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
-                    "weightType": "weighted",
+                    "weightType": "both",
                     "topic": ["connectivity", "overview"],
                     "text": "",
                     "extensible": true,
@@ -42,54 +42,8 @@
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
-                    "weightType": "weighted",
+                    "weightType": "both",
                     "topic": ["connectivity", "overview"],
-                    "text": "",
-                    "extensible": true,
-                    "extension": null,
-                    "return": "subgraph"
-                }
-            ]
-        },
-        {
-            "name": "connection-info-overall",
-            "title": "Connections",
-            "walkthrough": "section",
-            "sectionType": "connectivity",
-            "children": [
-                {
-                    "name": "link-number-clusters",
-                    "title": "Link number between (clusters)",
-                    "walkthrough": "slide",
-                    "scope": "nodes",
-                    "linkType": "both",
-                    "weightType": "weighted",
-                    "topic": ["connectivity", "statistics"],
-                    "text": "",
-                    "extensible": false,
-                    "extension": null
-                },
-                {
-                    "name": "most-connected-outside-cluster",
-                    "title": "Most connected cluster with outside",
-                    "walkthrough": "slide",
-                    "scope": "overall",
-                    "linkType": "both",
-                    "weightType": "weighted",
-                    "topic": ["connectivity"],
-                    "text": "",
-                    "extensible": true,
-                    "extension": null,
-                    "return": "subgraph"
-                },
-                {
-                    "name": "least-connected-outside-cluster",
-                    "title": "Least connected cluster with outside",
-                    "walkthrough": "slide",
-                    "scope": "overall",
-                    "linkType": "both",
-                    "weightType": "weighted",
-                    "topic": ["connectivity"],
                     "text": "",
                     "extensible": true,
                     "extension": null,
@@ -109,12 +63,58 @@
                     "walkthrough": "slide",
                     "scope": "overall",
                     "linkType": "both",
-                    "weightType": "weighted",
+                    "weightType": "both",
                     "topic": ["connectivity", "nodes"],
                     "text": "",
                     "extensible": true,
                     "extension": null,
                     "return": "one-node"
+                }
+            ]
+        },
+        {
+            "name": "connection-info-overall",
+            "title": "Connections",
+            "walkthrough": "section",
+            "sectionType": "connectivity",
+            "children": [
+                {
+                    "name": "link-number-clusters",
+                    "title": "Link number between (clusters)",
+                    "walkthrough": "slide",
+                    "scope": "nodes",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity", "statistics"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "most-connected-outside-cluster",
+                    "title": "Most connected cluster with outside",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "subgraph"
+                },
+                {
+                    "name": "least-connected-outside-cluster",
+                    "title": "Least connected cluster with outside",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["connectivity"],
+                    "text": "",
+                    "extensible": true,
+                    "extension": null,
+                    "return": "subgraph"
                 }
             ]
         }
