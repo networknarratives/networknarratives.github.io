@@ -1,13 +1,13 @@
 {
-    "name": "starred-slides",
-    "title": "Starred Slides",
+    "name": "bookmarked-slides",
+    "title": "Bookmarked Slides",
     "walkthrough": "walkthrough",
     "walkthroughType": "none",
     "abstract": "",
     "children": [
         {
-            "name": "all-starred-slides",
-            "title": "All starred slides",
+            "name": "all-bookmarked-slides",
+            "title": "All bookmarked slides",
             "walkthrough": "section",
             "sectionType": "none",
             "children": []
