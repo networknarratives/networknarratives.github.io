@@ -647,7 +647,8 @@
                     "topic": ["weight"],
                     "text": "",
                     "extensible": false,
-                    "extension": null
+                    "extension": null,
+                    "return": "one-node"
                 },
                 {
                     "name": "largest-link-gain-regional",
@@ -659,7 +660,8 @@
                     "topic": ["weight"],
                     "text": "",
                     "extensible": false,
-                    "extension": null
+                    "extension": null,
+                    "return": "one-node"
                 },
                 {
                     "name": "largest-link-loss",
@@ -671,7 +673,8 @@
                     "topic": ["weight"],
                     "text": "",
                     "extensible": false,
-                    "extension": null
+                    "extension": null,
+                    "return": "one-node"
                 },
                 {
                     "name": "largest-link-loss-regional",
@@ -683,7 +686,8 @@
                     "topic": ["weight"],
                     "text": "",
                     "extensible": false,
-                    "extension": null
+                    "extension": null,
+                    "return": "one-node"
                 },
                 {
                     "name": "strongest-link",
@@ -1025,7 +1029,7 @@
                 },
                 {
                     "name": "neighboring-link-weight-proportion",
-                    "title": "Neigboring link weight proportion",
+                    "title": "Neighboring link weight proportion",
                     "walkthrough": "slide",
                     "scope": "node",
                     "linkType": "both",
@@ -1074,7 +1078,7 @@
                 },
                 {
                     "name": "neighboring-link-weight-proportion-neighbor",
-                    "title": "Neigboring link weight proportion (neighbors)",
+                    "title": "Neighboring link weight proportion (neighbors)",
                     "walkthrough": "slide",
                     "scope": "node",
                     "linkType": "both",
@@ -1602,6 +1606,174 @@
                     "extensible": false,
                     "extension": "highest-closeness-centrality",
                     "return": "one-node"
+                },
+                {
+                    "name": "temporal-time-span",
+                    "title": "Time span",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-node-link-number",
+                    "title": "Node and link number",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "node", "link", "statistic"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-most-connected-node-top-three",
+                    "title": "Top (three) most connected nodes",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "node", "connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-initial-link-number",
+                    "title": "Initial link number",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "link", "statistic"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-node-link-first",
+                    "title": "Link number (first period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "link", "statistic"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-most-connected-node-first",
+                    "title": "Most central node (first period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "node"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-node-link-second",
+                    "title": "Link number (second period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "link", "statistic"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-most-connected-node-second",
+                    "title": "Most central node (second period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "node"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-node-link-third",
+                    "title": "Link number (third period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "link", "statistic"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-most-connected-node-third",
+                    "title": "Most central node (third period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "node"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-network-density-trend",
+                    "title": "Network density trend",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "density"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-connected-node-trend",
+                    "title": "Connected node number trend",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-most-dense-period",
+                    "title": "Most dense period",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-least-dense-period",
+                    "title": "Least dense period",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
                 }
             ]
         }

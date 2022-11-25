@@ -143,7 +143,7 @@
                 },
                 {
                     "name": "neighboring-link-weight-proportion",
-                    "title": "Neigboring link weight proportion",
+                    "title": "Neighboring link weight proportion",
                     "walkthrough": "slide",
                     "scope": "node",
                     "linkType": "both",
@@ -172,7 +172,7 @@
             "name": "further-extension",
             "title": "Further Extension",
             "walkthrough": "section",
-            "sectionType": "neiboring-nodes",
+            "sectionType": "neighboring-nodes",
             "children": [
                 {
                     "name": "neighboring-node-neighbor",

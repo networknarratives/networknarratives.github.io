@@ -3,28 +3,199 @@
     "title": "Temporal Network Exploration",
     "abstract": "Explores a temporal network with overview, evolution and trends.",
     "walkthrough": "walkthrough",
-    "walkthroughType": "overall",
+    "walkthroughType": "temporal",
     "children": [
         {
             "name": "temporal-network-overview",
             "title": "Overview",
             "walkthrough": "section",
             "sectionType": "overview",
-            "children": []
+            "children": [
+                {
+                    "name": "temporal-time-span",
+                    "title": "Time span",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-node-link-number",
+                    "title": "Node and link number",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "node", "link", "statistic"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-most-connected-node-top-three",
+                    "title": "Top (three) most connected nodes",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "node", "connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
         },
         {
             "name": "temporal-network-evolution",
             "title": "Evolution",
             "walkthrough": "section",
             "sectionType": "temporal",
-            "children": []
+            "children": [
+                {
+                    "name": "temporal-initial-link-number",
+                    "title": "Initial link number",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "link", "statistic"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-node-link-first",
+                    "title": "Link number (first period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "link", "statistic"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-most-connected-node-first",
+                    "title": "Most central node (first period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "node"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-node-link-second",
+                    "title": "Link number (second period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "link", "statistic"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-most-connected-node-second",
+                    "title": "Most central node (second period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "node"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-node-link-third",
+                    "title": "Link number (third period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "link", "statistic"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-most-connected-node-third",
+                    "title": "Most central node (third period)",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "node"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
         },
         {
             "name": "temporal-network-trend",
             "title": "Trends",
             "walkthrough": "section",
             "sectionType": "temporal",
-            "children": []
+            "children": [
+                {
+                    "name": "temporal-network-density-trend",
+                    "title": "Network density trend",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "density"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-connected-node-trend",
+                    "title": "Connected node number trend",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-most-dense-period",
+                    "title": "Most dense period",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                },
+                {
+                    "name": "temporal-least-dense-period",
+                    "title": "Least dense period",
+                    "walkthrough": "slide",
+                    "scope": "overall",
+                    "linkType": "both",
+                    "weightType": "both",
+                    "topic": ["temporal", "connectivity"],
+                    "text": "",
+                    "extensible": false,
+                    "extension": null
+                }
+            ]
         }
     ]
 }
